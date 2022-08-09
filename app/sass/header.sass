@@ -1,0 +1,107 @@
+@import "vars"
+
+/*==========  section header ==========*/
+header
+  padding: 42px 0 28px
+
+
+.logo
+  @include d-flex
+  max-width: 215px
+  width: 100%
+  img
+    width: 100%
+
+.phone
+  display: flex
+  align-items: center
+  margin: 0 19px 0 0
+  border: solid 1px #fcc204
+    radius: 18px
+  background-color: #fff
+  height: 36px
+  padding: 10px 15px
+  font-size: 16px
+  font-weight: 500
+  color: #212121
+  &-icon
+    @include d-flex
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 10px 0 0
+  &:hover
+    background: $accent
+    color: #212121
+
+.btn-close-navbar
+  fill: $text
+  width: 24px
+  height: 24px
+  margin: 0 0 20px auto
+  display: none
+
+.navbar
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+
+.navbar-nav
+  flex-direction: row
+  align-items: center
+  flex-wrap: wrap
+  font-size: 16px
+  font-weight: 300
+  .nav-item
+    margin: 0 46px 0 0
+    &:last-child
+      margin: 0
+
+  .nav-link
+    color: #212121
+    position: relative
+    padding: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      bottom: -5px
+      transform: translate(-50%,0)
+      width: 0
+      height: 2px
+      background: $accent
+      border-radius: 2px
+      transition: .3s ease
+    &:hover
+      color: $text
+      &:before
+        width: 30px
+  .dropdown-toggle
+    &:after
+      display: none
+  .dropdown-menu
+    position: absolute
+    min-width: 264px
+    font-weight: normal
+    margin: 20px 0 0 -24px
+
+
+.search-wrapper
+  margin: 0 0 0 47px
+
+.btn-search
+  @include d-flex
+  width: 16px
+  height: 16px
+  min-width: 16px
+  &:after
+    display: none
+
+/*==========  section header end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/

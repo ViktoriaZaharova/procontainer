@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "GTEestiProDisplay";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Light.eot");
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Light.woff") format("woff"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "GTEestiProDisplay";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Medium.eot");
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Medium.woff") format("woff"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "GTEestiProDisplay";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Bold.eot");
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Bold.woff") format("woff"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Bold.ttf") format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "GTEestiProDisplay", sans-serif;
+  font-weight: normal;
+  background: #fff;
+  color: #212121; }
+
+html, body {
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.text-center {
+  text-align: center; }
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "GTEestiProDisplay", sans-serif;
+  border: none;
+    border-radius: 0;
+  width: 100%; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: inherit; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: inherit; }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+    color: inherit; }
+  input::placeholder, textarea::placeholder, select::placeholder {
+    color: inherit; }
+    input::-webkit-input-placeholder:hover, input::-webkit-input-placeholder:focus, textarea::-webkit-input-placeholder:hover, textarea::-webkit-input-placeholder:focus, select::-webkit-input-placeholder:hover, select::-webkit-input-placeholder:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    input::-moz-placeholder:hover, input::-moz-placeholder:focus, textarea::-moz-placeholder:hover, textarea::-moz-placeholder:focus, select::-moz-placeholder:hover, select::-moz-placeholder:focus {
+      outline: none;
+      box-shadow: none; }
+    input::-ms-input-placeholder:hover, input::-ms-input-placeholder:focus, textarea::-ms-input-placeholder:hover, textarea::-ms-input-placeholder:focus, select::-ms-input-placeholder:hover, select::-ms-input-placeholder:focus {
+      outline: none;
+      box-shadow: none; }
+    input::placeholder:hover, input::placeholder:focus, textarea::placeholder:hover, textarea::placeholder:focus, select::placeholder:hover, select::placeholder:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
+label {
+  display: block;
+  width: 100%; }
+
+button, .btn {
+  outline: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "GTEestiProDisplay", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+    border-radius: 0; }
+  button:hover, button:focus, .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 27px;
+  font-size: 16px;
+  font-weight: 500; }
+
+.btn-accent {
+  color: #212121;
+  background: #fcc204;
+  border: solid 1px #fcc204;
+    border-radius: 18px; }
+  .btn-accent:hover {
+    background: #f7f7f7;
+    color: #212121; }
+
+.btn-light-grey {
+  background: #f7f7f7;
+  color: #212121;
+  border-radius: 18px; }
+  .btn-light-grey:hover {
+    background: #fcc204;
+    color: #212121; }
+
+.btn-md {
+  font-size: 18px;
+  height: 54px;
+  padding: 0 62px;
+  border-radius: 27px; }
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+strong, b {
+  font-weight: bold;
+  display: inline-block; }
+
+ul, ol {
+  padding: 0 0 0 20px; }
+
+.my-ul {
+  list-style: none;
+  padding: 0; }
+
+.container {
+  max-width: 1390px; }
+
+h2 {
+  width: 100%;
+  color: #212121;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 auto 32px; }
+
+.subtitle {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300; }
+
+.dropdown-menu {
+  border: none;
+    border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14);
+          box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14);
+  min-width: 170px;
+  margin: 20px 0 0;
+  padding: 0; }
+  .dropdown-menu > li {
+    position: relative; }
+    .dropdown-menu > li:hover {
+      background: #f8f8f8; }
+      .dropdown-menu > li:hover > .dropdown-item {
+        color: #162ee7; }
+      .dropdown-menu > li:hover .dropdown-submenu {
+        display: block; }
+    > .dropdown-menu > li:first-child {
+      border-radius: 10px 10px 0 0; }
+      > .dropdown-menu > li:first-child .dropdown-item {
+        border-radius: 10px 10px 0 0; }
+    > .dropdown-menu > li:last-child {
+      border-radius: 0 0 10px 10px; }
+      > .dropdown-menu > li:last-child .dropdown-item {
+        border-radius: 0 0 10px 10px; }
+
+.dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14);
+          box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14);
+  min-width: 264px;
+  display: none;
+  overflow: hidden; }
+  .dropdown-submenu li:first-child, .dropdown-submenu li:last-child {
+    border-radius: 0; }
+    .dropdown-submenu li:first-child .dropdown-item, .dropdown-submenu li:last-child .dropdown-item {
+      border-radius: 0; }
+  .dropdown-submenu .dropdown-item {
+    border-radius: 0;
+    color: #212121; }
+    .dropdown-submenu .dropdown-item:hover {
+      background: #f8f8f8;
+      color: #162ee7; }
+
+.dropdown-item {
+  padding: 8.5px 23px;
+  font-size: 16px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .dropdown-item:hover {
+    background: transparent; }

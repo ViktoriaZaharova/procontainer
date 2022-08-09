@@ -1,0 +1,229 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #212121
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  border: none
+    radius: 0
+  width: 100%
+
+  &::placeholder
+    color: inherit
+
+    &:hover, &:focus
+      outline: none
+      box-shadow: none
+
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  height: 36px
+  width: fit-content
+  padding: 0 27px
+  font-size: 16px
+  font-weight: 500
+
+.btn-accent
+  color: #212121
+  background: $accent
+  border: solid 1px #fcc204
+    radius: 18px
+  &:hover
+    background: $btn-grey
+    color: #212121
+
+.btn-light-grey
+  background: $btn-grey
+  color: #212121
+  border-radius: 18px
+  &:hover
+    background: $accent
+    color: #212121
+
+.btn-md
+  font-size: 18px
+  height: 54px
+  padding: 0 62px
+  border-radius: 27px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.container
+  max-width: 1390px
+
+h2
+  width: 100%
+  color: #212121
+  font-size: 30px
+  font-weight: 700
+  margin: 0 auto 32px
+
+.subtitle
+  width: 100%
+  font-size: 20px
+  font-weight: 300
+
+
+.dropdown-menu
+  border: none
+    radius: 10px
+  background: #fff
+  box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
+  min-width: 170px
+  margin: 20px 0 0
+  padding: 0
+  >li
+    position: relative
+    &:hover
+      background: #f8f8f8
+      >.dropdown-item
+        color: $blue
+      .dropdown-submenu
+        display: block
+    >&:first-child
+      border-radius: 10px 10px 0 0
+      .dropdown-item
+        border-radius: 10px 10px 0 0
+    >&:last-child
+      border-radius: 0 0 10px 10px
+      .dropdown-item
+        border-radius: 0 0 10px 10px
+
+.dropdown-submenu
+  position: absolute
+  left: 100%
+  top: 0
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
+  min-width: 264px
+  display: none
+  overflow: hidden
+  li
+    &:first-child, &:last-child
+      border-radius: 0
+      .dropdown-item
+        border-radius: 0
+  .dropdown-item
+    border-radius: 0
+    color: #212121
+    &:hover
+      background: #f8f8f8
+      color: $blue
+
+.dropdown-item
+  padding: 8.5px 23px
+  font-size: 16px
+  font-weight: 300
+  display: flex
+  align-items: center
+  &:hover
+    background: transparent
