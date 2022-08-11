@@ -68,23 +68,26 @@ a
   &:hover, &:focus
     text-decoration: none
 
-input, textarea, select
+input, textarea, select, .form-control
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 29px
   box-sizing: border-box
   font-family: $default-font
   border: none
     radius: 0
   width: 100%
-
+  height: 50px
+  color: #666
+  font-size: 14px
+  font-weight: 300
   &::placeholder
-    color: inherit
+    color: #666
 
-    &:hover, &:focus
-      outline: none
-      box-shadow: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 
 label
@@ -171,6 +174,23 @@ h2
   font-size: 20px
   font-weight: 300
 
+.dropdown-toggle
+  display: flex
+  align-items: center
+  color: #212121
+  font-size: 14px
+  &:after
+    content: ''
+    border: none
+    width: 9px
+    height: 5px
+    background: url('../img/arrow-small_black.svg') no-repeat center
+      size: 100%
+    @include d-flex
+    margin-left: 9px
+
+.dropdown-menu[data-bs-popper]
+  margin-top: 20px
 
 .dropdown-menu
   border: none
@@ -188,14 +208,32 @@ h2
         color: $blue
       .dropdown-submenu
         display: block
-    >&:first-child
+    &:first-child
       border-radius: 10px 10px 0 0
       .dropdown-item
         border-radius: 10px 10px 0 0
-    >&:last-child
+    &:last-child
       border-radius: 0 0 10px 10px
       .dropdown-item
         border-radius: 0 0 10px 10px
+      ul
+        li
+          border-radius: 0
+          .dropdown-item
+            border-radius: 0
+          &:first-child
+            border-radius: 10px 10px 0 0
+            .dropdown-item
+              border-radius: 10px 10px 0 0
+          &:last-child
+            border-radius: 0 0 10px 10px
+            .dropdown-item
+              border-radius: 0 0 10px 10px
+
+  .dropdown-item
+    display: flex
+    align-items: center
+
 
 .dropdown-submenu
   position: absolute
@@ -206,7 +244,6 @@ h2
   box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
   min-width: 264px
   display: none
-  overflow: hidden
   li
     &:first-child, &:last-child
       border-radius: 0
@@ -220,10 +257,68 @@ h2
       color: $blue
 
 .dropdown-item
-  padding: 8.5px 23px
+  padding: 8.5px 16px 8.5px 23px
   font-size: 16px
   font-weight: 300
   display: flex
   align-items: center
   &:hover
     background: transparent
+
+.drop-item
+  &:hover
+    .dropdown-item
+      &:after
+        display: flex
+  >.dropdown-item
+    &:after
+      content: ''
+      display: none
+      align-items: center
+      justify-content: center
+      margin-left: auto
+      width: 6px
+      height: 12px
+      background: url('../img/arrow-small_blue.svg') no-repeat center
+        size: 100%
+
+
+.vertical-scroll
+  overflow-y: auto
+  &.dropdown-menu
+    max-height: 420px
+  &::-webkit-scrollbar
+    width: 3px
+  &::-webkit-scrollbar-thumb
+    width: 3px
+    background: $accent
+    border-radius: 1.5px
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  position: relative
+  padding: 0
+  bottom: 0
+  width: 100%
+  list-style: none
+  margin: 30px auto 0
+  @include d-flex
+  li
+    cursor: pointer
+    background: #eee
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: #212121
+

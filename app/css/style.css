@@ -1,5 +1,12 @@
 @font-face {
   font-family: "GTEestiProDisplay";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Thin.eot");
+  src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Thin.woff") format("woff"), url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "GTEestiProDisplay";
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/GTEestiProDisplay/GTEestiProDisplay-Light.eot");
@@ -84,42 +91,36 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
-input, textarea, select {
+input, textarea, select, .form-control {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 0 29px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "GTEestiProDisplay", sans-serif;
   border: none;
     border-radius: 0;
-  width: 100%; }
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-    color: inherit; }
-  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-    color: inherit; }
-  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-    color: inherit; }
-  input::placeholder, textarea::placeholder, select::placeholder {
-    color: inherit; }
-    input::-webkit-input-placeholder:hover, input::-webkit-input-placeholder:focus, textarea::-webkit-input-placeholder:hover, textarea::-webkit-input-placeholder:focus, select::-webkit-input-placeholder:hover, select::-webkit-input-placeholder:focus {
-      outline: none;
-      -webkit-box-shadow: none;
-              box-shadow: none; }
-    input::-moz-placeholder:hover, input::-moz-placeholder:focus, textarea::-moz-placeholder:hover, textarea::-moz-placeholder:focus, select::-moz-placeholder:hover, select::-moz-placeholder:focus {
-      outline: none;
-      box-shadow: none; }
-    input::-ms-input-placeholder:hover, input::-ms-input-placeholder:focus, textarea::-ms-input-placeholder:hover, textarea::-ms-input-placeholder:focus, select::-ms-input-placeholder:hover, select::-ms-input-placeholder:focus {
-      outline: none;
-      box-shadow: none; }
-    input::placeholder:hover, input::placeholder:focus, textarea::placeholder:hover, textarea::placeholder:focus, select::placeholder:hover, select::placeholder:focus {
-      outline: none;
-      -webkit-box-shadow: none;
-              box-shadow: none; }
+  width: 100%;
+  height: 50px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+    color: #666; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, .form-control::-moz-placeholder {
+    color: #666; }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, .form-control::-ms-input-placeholder {
+    color: #666; }
+  input::placeholder, textarea::placeholder, select::placeholder, .form-control::placeholder {
+    color: #666; }
+  input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus, .form-control:hover, .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 label {
   display: block;
@@ -215,6 +216,36 @@ h2 {
   font-size: 20px;
   font-weight: 300; }
 
+.dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212121;
+  font-size: 14px; }
+  .dropdown-toggle:after {
+    content: '';
+    border: none;
+    width: 9px;
+    height: 5px;
+    background: url("../img/arrow-small_black.svg") no-repeat center;
+      background-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 9px; }
+
+.dropdown-menu[data-bs-popper] {
+  margin-top: 20px; }
+
 .dropdown-menu {
   border: none;
     border-radius: 10px;
@@ -232,14 +263,33 @@ h2 {
         color: #162ee7; }
       .dropdown-menu > li:hover .dropdown-submenu {
         display: block; }
-    > .dropdown-menu > li:first-child {
+    .dropdown-menu > li:first-child {
       border-radius: 10px 10px 0 0; }
-      > .dropdown-menu > li:first-child .dropdown-item {
+      .dropdown-menu > li:first-child .dropdown-item {
         border-radius: 10px 10px 0 0; }
-    > .dropdown-menu > li:last-child {
+    .dropdown-menu > li:last-child {
       border-radius: 0 0 10px 10px; }
-      > .dropdown-menu > li:last-child .dropdown-item {
+      .dropdown-menu > li:last-child .dropdown-item {
         border-radius: 0 0 10px 10px; }
+      .dropdown-menu > li:last-child ul li {
+        border-radius: 0; }
+        .dropdown-menu > li:last-child ul li .dropdown-item {
+          border-radius: 0; }
+        .dropdown-menu > li:last-child ul li:first-child {
+          border-radius: 10px 10px 0 0; }
+          .dropdown-menu > li:last-child ul li:first-child .dropdown-item {
+            border-radius: 10px 10px 0 0; }
+        .dropdown-menu > li:last-child ul li:last-child {
+          border-radius: 0 0 10px 10px; }
+          .dropdown-menu > li:last-child ul li:last-child .dropdown-item {
+            border-radius: 0 0 10px 10px; }
+  .dropdown-menu .dropdown-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .dropdown-submenu {
   position: absolute;
@@ -250,8 +300,7 @@ h2 {
   -webkit-box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14);
           box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14);
   min-width: 264px;
-  display: none;
-  overflow: hidden; }
+  display: none; }
   .dropdown-submenu li:first-child, .dropdown-submenu li:last-child {
     border-radius: 0; }
     .dropdown-submenu li:first-child .dropdown-item, .dropdown-submenu li:last-child .dropdown-item {
@@ -264,7 +313,7 @@ h2 {
       color: #162ee7; }
 
 .dropdown-item {
-  padding: 8.5px 23px;
+  padding: 8.5px 16px 8.5px 23px;
   font-size: 16px;
   font-weight: 300;
   display: -webkit-box;
@@ -275,3 +324,70 @@ h2 {
           align-items: center; }
   .dropdown-item:hover {
     background: transparent; }
+
+.drop-item:hover .dropdown-item:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.drop-item > .dropdown-item:after {
+  content: '';
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  width: 6px;
+  height: 12px;
+  background: url("../img/arrow-small_blue.svg") no-repeat center;
+    background-size: 100%; }
+
+.vertical-scroll {
+  overflow-y: auto; }
+  .vertical-scroll.dropdown-menu {
+    max-height: 420px; }
+  .vertical-scroll::-webkit-scrollbar {
+    width: 3px; }
+  .vertical-scroll::-webkit-scrollbar-thumb {
+    width: 3px;
+    background: #fcc204;
+    border-radius: 1.5px; }
+
+.slick-slider {
+  width: 100%; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-dots {
+  position: relative;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  list-style: none;
+  margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .slick-dots li {
+    cursor: pointer;
+    background: #eee;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px 0 0; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #212121; }

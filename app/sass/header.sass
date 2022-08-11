@@ -4,7 +4,6 @@
 header
   padding: 42px 0 28px
 
-
 .logo
   @include d-flex
   max-width: 215px
@@ -97,6 +96,41 @@ header
   min-width: 16px
   &:after
     display: none
+
+.dropdown-search[data-bs-popper]
+  min-width: 662px
+  left: auto
+  right: 0
+
+.form-search
+  display: flex
+  align-items: center
+  input
+    border-radius: 10px 0 0 10px
+
+.btn-outline-success
+  border-radius: 0 10px 10px 0
+  height: 50px
+  padding: 0 33px
+  border: none
+  &:hover
+    background: $blue
+    color: #fff
+
+.country-wrapper
+  margin: 0 0 0 19px
+  .dropdown-toggle
+    font-weight: 100
+  .dropdown-item
+    font-size: 16px
+    font-weight: 300
+    &:hover
+      color: $blue
+      background: #f8f8f8
+
+.dropdown-menu-country
+  margin: 23px 0 0 !important
+  padding: 10px 0
 
 /*==========  section header end  ==========*/
 
