@@ -64,7 +64,7 @@ body {
   position: relative;
   line-height: normal;
   font-family: "GTEestiProDisplay", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   background: #fff;
   color: #212121; }
 
@@ -185,6 +185,13 @@ button, .btn {
   padding: 0 62px;
   border-radius: 27px; }
 
+.btn-white {
+  background: #fff;
+  padding: 0 25px; }
+  .btn-white:hover {
+    background: #fcc204;
+    color: #fff; }
+
 .svg-icon {
   display: inline-block;
   width: 100%;
@@ -209,7 +216,7 @@ h2 {
   color: #212121;
   font-size: 30px;
   font-weight: 700;
-  margin: 0 auto 32px; }
+  margin: 0 auto 30px; }
 
 .subtitle {
   width: 100%;
@@ -391,3 +398,12 @@ h2 {
       display: none; }
   .slick-dots .slick-active {
     background: #212121; }
+
+.wrapper-content {
+  background: #f8f8f8;
+  width: 100%;
+  padding: 36px 50px;
+  border-radius: 14px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
