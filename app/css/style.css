@@ -185,6 +185,17 @@ button, .btn {
   padding: 0 62px;
   border-radius: 27px; }
 
+.btn-border {
+  border: 1px solid #fcc204;
+  color: #212121;
+  padding: 0 24px; }
+  .btn-border:hover {
+    background: #fcc204;
+    color: #fff; }
+
+.btn-link {
+  text-decoration: none; }
+
 .btn-white {
   background: #fff;
   padding: 0 25px; }
@@ -222,6 +233,15 @@ h2 {
   width: 100%;
   font-size: 20px;
   font-weight: 300; }
+
+.wrapper-content {
+  background: #f8f8f8;
+  width: 100%;
+  padding: 36px 50px;
+  border-radius: 14px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
 
 .dropdown-toggle {
   display: -webkit-box;
@@ -399,11 +419,66 @@ h2 {
   .slick-dots .slick-active {
     background: #212121; }
 
-.wrapper-content {
-  background: #f8f8f8;
-  width: 100%;
-  padding: 36px 50px;
-  border-radius: 14px; }
+.nav-tabs {
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%; }
+  .nav-tabs .nav-link {
+    padding: 0;
+    color: #999;
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+      border-radius: 0;
+    margin: 0 37px 0 0; }
+    .nav-tabs .nav-link:last-child {
+      margin: 0; }
+    .nav-tabs .nav-link.active {
+      color: #212121;
+      text-decoration: underline; }
 
-.mb-30 {
-  margin-bottom: 30px; }
+.tab-content {
+  width: 100%; }
+
+.checkbox {
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 300; }
+  .checkbox input {
+    display: none; }
+    .checkbox input:checked ~ .checkbox-custom {
+      background: #212121 url("../img/check.svg") no-repeat center;
+        background-size: 12px; }
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  position: relative;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  margin: 0 12px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.list-checkbox li {
+  margin: 0 0 16px; }
+  .list-checkbox li:last-child {
+    margin: 0; }

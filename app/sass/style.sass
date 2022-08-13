@@ -144,6 +144,17 @@ button, .btn
   padding: 0 62px
   border-radius: 27px
 
+.btn-border
+  border: 1px solid $accent
+  color: $text
+  padding: 0 24px
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-link
+  text-decoration: none
+
 .btn-white
   background: #fff
   padding: 0 25px
@@ -181,6 +192,15 @@ h2
   width: 100%
   font-size: 20px
   font-weight: 300
+
+.wrapper-content
+  background: #f8f8f8
+  width: 100%
+  padding: 36px 50px
+  border-radius: 14px
+
+.mb-30
+  margin-bottom: 30px
 
 .dropdown-toggle
   display: flex
@@ -330,12 +350,59 @@ h2
   .slick-active
     background: #212121
 
-.wrapper-content
-  background: #f8f8f8
-  width: 100%
-  padding: 36px 50px
-  border-radius: 14px
 
-.mb-30
-  margin-bottom: 30px
+
+.nav-tabs
+  border: none
+  font-size: 14px
+  font-weight: 300
+  width: 100%
+  .nav-link
+    padding: 0
+    color: #999
+    font-weight: 300
+    font-size: 14px
+    border: none
+      radius: 0
+    margin: 0 37px 0 0
+    &:last-child
+      margin: 0
+    &.active
+      color: #212121
+      text-decoration: underline
+
+.tab-content
+  width: 100%
+
+.checkbox
+  cursor: pointer
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 0
+  color: #212121
+  font-size: 16px
+  font-weight: 300
+  input
+    display: none
+    &:checked ~ .checkbox-custom
+      background: #212121 url("../img/check.svg") no-repeat center
+        size: 12px
+
+.checkbox-custom
+  width: 16px
+  height: 16px
+  min-width: 16px
+  position: relative
+  border-radius: 3px
+  background-color: #f7f7f7
+  margin: 0 12px 0 0
+  @include d-flex
+
+
+.list-checkbox
+  li
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
 
