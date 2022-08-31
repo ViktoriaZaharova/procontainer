@@ -230,6 +230,13 @@ h2 {
   margin: 0 auto 30px; }
 
 .subtitle {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300; }
+
+.subtitle {
   width: 100%;
   font-size: 20px;
   font-weight: 300; }
@@ -419,6 +426,34 @@ h2 {
   .slick-dots .slick-active {
     background: #212121; }
 
+.slick-arrow {
+  z-index: 1;
+  position: absolute;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #f7f7f7;
+  fill: #212121;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  .slick-arrow svg {
+    width: 8px;
+    height: 15px; }
+  .slick-arrow:hover {
+    background: #fcc204;
+    fill: #212121; }
+
 .nav-tabs {
   border: none;
   font-size: 14px;
@@ -482,3 +517,42 @@ h2 {
   margin: 0 0 16px; }
   .list-checkbox li:last-child {
     margin: 0; }
+
+.color-blue {
+  color: #162ee7; }
+
+a.color-blue:hover {
+  color: #212121; }
+
+.link-all {
+  font-size: 14px;
+  font-weight: 300;
+  border-bottom: 1px dotted #162ee7; }
+
+.ml-10 {
+  margin-left: 10px; }
+
+.m-90 {
+  margin: 90px 0; }
+
+.title-wrapper h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0; }
+
+.list-dots li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .list-dots li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+    margin: 8px 11px 0 0;
+    border-radius: 50%;
+    background: #fcc204; }

@@ -189,6 +189,13 @@ h2
   margin: 0 auto 30px
 
 .subtitle
+  text-align: center
+  width: 100%
+  margin: 0 auto
+  font-size: 20px
+  font-weight: 300
+
+.subtitle
   width: 100%
   font-size: 20px
   font-weight: 300
@@ -350,6 +357,24 @@ h2
   .slick-active
     background: #212121
 
+.slick-arrow
+  z-index: 1
+  position: absolute
+  opacity: 1
+  @include d-flex
+  border-radius: 50%
+  width: 60px
+  height: 60px
+  background: #f7f7f7
+  fill: $text
+  top: 50%
+  transform: translate(0,-50%)
+  svg
+    width: 8px
+    height: 15px
+  &:hover
+    background: $accent
+    fill: $text
 
 
 .nav-tabs
@@ -406,3 +431,38 @@ h2
     &:last-child
       margin: 0
 
+.color-blue
+  color: $blue
+
+a.color-blue
+  &:hover
+    color: $text
+
+.link-all
+  font-size: 14px
+  font-weight: 300
+  border-bottom: 1px dotted #162ee7
+
+.ml-10
+  margin-left: 10px
+
+.m-90
+  margin: 90px 0
+
+.title-wrapper
+  h2
+    width: fit-content
+    margin: 0
+
+.list-dots
+  li
+    display: flex
+    align-items: flex-start
+    &:before
+      content: ''
+      width: 6px
+      height: 6px
+      min-width: 6px
+      margin: 8px 11px 0 0
+      border-radius: 50%
+      background: #fcc204

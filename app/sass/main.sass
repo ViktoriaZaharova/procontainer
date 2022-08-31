@@ -93,7 +93,7 @@
     color: #666
     max-width: 522px
     margin: 30px 0
-  h4
+  &__subtitle
     font-weight: 500
     max-width: 460px
     margin: 0 0 30px
@@ -118,7 +118,7 @@
     @include d-flex
     img
       max-height: 100%
-  h4
+  &__title
     font-weight: 700
     font-size: 22px
     max-width: 220px
@@ -235,6 +235,357 @@
   border-bottom: 1px dotted $blue
 /*==========  section best-offers end  ==========*/
 
+
+
+/*==========  section about-company ==========*/
+.about-company
+  h2
+    margin: 0 0 26px
+  &__image
+    max-width: 490px
+    width: 100%
+    @include d-flex
+    margin: 0 auto 57px
+  &__info
+
+    margin: 0 0 30px
+    .box-text
+      text-transform: uppercase
+      color: #666
+      font-size: 14px
+      p
+        margin: 0 0 30px
+        &:last-child
+          margin: 0
+
+.about-company-description
+  padding: 45px 48px 51px 49px
+  border-radius: 14px
+  background-color: #f7f7f7
+  max-width: 540px
+  width: 100%
+  margin: 0 auto 0 0
+  &__title
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    font-size: 22px
+    font-weight: bold
+    img
+      margin: 0 0 0 17px
+      max-width: 188px
+  p
+    margin: 28px 0 29px
+    font-size: 20px
+    font-weight: 300
+    line-height: 1.5
+  .box-text
+    p
+      font-size: 16px
+      line-height: normal
+      margin: 0
+
+.about-company-box
+  margin: 0 0 50px
+  .box-text
+    color: #666666
+    font-weight: 300
+    font-size: 16px
+    max-width: 302px
+  &__title
+    font-size: 18px
+    font-weight: 500
+    margin: 16px 0 18px
+    line-height: 1.22
+  &__number
+    font-size: 18px
+    font-weight: 500
+    &:after
+      content: '.'
+      font-size: 26px
+      color: #fcc204
+      line-height: 1
+
+.warranty-clients
+  width: 100%
+  max-width: 310px
+  position: relative
+  padding: 32px 25px
+  border-radius: 18px
+  box-shadow: 0 14px 27px 0 rgba(45, 45, 45, 0.14)
+  background: #fff
+  font-size: 16px
+  font-weight: 500
+  overflow: hidden
+  margin: 0 0 50px
+  img
+    position: absolute
+    left: 0
+    top: 0
+
+  p
+    max-width: 145px
+    margin-left: auto
+/*==========  section about-company end  ==========*/
+
+
+
+/*==========  section completed-projects ==========*/
+.completed-projects
+  margin: 70px 0 90px
+  .title-wrapper
+    justify-content: center
+    display: flex
+    align-items: flex-end
+    flex-wrap: wrap
+    .link-all
+      margin: 0 0 4px 10px
+
+.completed-projects-slider
+  margin: 50px auto 0
+  .slick-prev
+    left: -124px
+  .slick-next
+    right: -124px
+  .slick-list
+    margin: 0 -13px
+  .slick-slide
+    padding: 0 13px
+  &__item
+    position: relative
+    overflow: hidden
+    height: 290px
+    border-radius: 14px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    .hover-item
+      position: absolute
+      left: 0
+      top: 0
+      background-color: rgba(0, 0, 0, 0.63)
+      text-align: center
+      color: #fff
+      font-size: 20px
+      font-weight: 300
+      width: 100%
+      height: 100%
+      display: none
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      &:before
+        content: ''
+        width: 26px
+        height: 26px
+        background: url("../img/search.svg") no-repeat center
+          size: 100%
+        margin: 0 auto 37px
+    &:hover
+      .hover-item
+        display: flex
+
+/*==========  section completed-projects end  ==========*/
+
+
+
+/*==========  section composition-blocks ==========*/
+
+.composition-blocks-wrapper
+  position: relative
+  margin: 66px auto 0
+
+.composition-blocks__image
+  margin: 0 auto
+  max-width: 373px
+  padding: 190px 0 180px
+  width: 100%
+  @include d-flex
+
+.composition-blocks-item
+  position: absolute
+  text-align: center
+  max-width: 290px
+  &:before
+    content: ''
+    position: absolute
+
+  p
+    color: #666
+  &__title
+    font-size: 18px
+    font-weight: 500
+    margin: 0 auto 16px
+  &__icon
+    margin: 0 auto 18px
+    @include d-flex
+  &:first-child
+    left: 160px
+    bottom: 160px
+    max-width: 205px
+    &:before
+      width: 267px
+      height: 39px
+      background: url("../img/arrow-compound5.png") no-repeat center
+        size: 100%
+      top: -50px
+      right: -200px
+  &:nth-child(2)
+    max-width: 250px
+    top: 150px
+    left: 160px
+    &:before
+      background: url("../img/arrow-compound1.png") no-repeat center
+        size: 100%
+      width: 256px
+      height: 76px
+      bottom: -88px
+      right: -200px
+  &:nth-child(3)
+    top: 0
+    left: 43%
+    max-width: 240px
+    &:before
+      background: url("../img/arrow-compound2.png") no-repeat center
+        size: 100%
+      width: 34px
+      height: 98px
+      bottom: -109px
+      right: 20px
+  &:nth-child(4)
+    max-width: 270px
+    right: 190px
+    top: 160px
+    &:before
+      background: url("../img/arrow-compound3.png") no-repeat center
+        size: 100%
+      width: 205px
+      height: 108px
+      bottom: -123px
+      left: -70px
+  &:nth-child(5)
+    right: 160px
+    bottom: 110px
+    max-width: 300px
+  &:nth-child(6)
+    left: 45%
+    bottom: 0
+    &:before
+      background: url("../img/arrow-compound4.png") no-repeat center
+        size: 100%
+      width: 70px
+      height: 112px
+      top: -130px
+      left: 0
+
+
+
+/*==========  section composition-blocks end  ==========*/
+
+
+
+/*==========  section advantages-block-containers ==========*/
+.advantages-block-containers
+  h2
+    margin: 0 auto 60px
+    text-align: center
+  .wrapper-content
+    padding: 70px 60px 17px 59px
+
+.advantages-block-containers-item
+  margin: 0 0 53px
+  text-align: center
+  .box-text
+    max-width: 270px
+    color: #666
+    font-size: 16px
+  &__title
+    margin: 25px auto
+    font-size: 22px
+    font-weight: bold
+    min-height: 48px
+  &__icon
+    margin: 0 auto
+    @include d-flex
+
+
+/*==========  section advantages-block-containers end  ==========*/
+
+
+
+/*==========  section about-block-containers ==========*/
+.about-block-containers
+  margin: 0 0 103px
+  ul
+    margin: 0 0 30px
+    line-height: 1.38
+    li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+  .box-text
+    line-height: 1.63
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.manager-box
+  padding: 30px 30px 32px
+  border-radius: 10px
+  border: solid 1px #fcc204
+  background-color: #fff
+  max-width: 320px
+  width: 100%
+  margin-left: auto
+  text-align: center
+  .box-text
+    line-height: 1.38
+    text-align: center
+    margin: 16px auto
+  .subtitle
+    font-size: 22px
+    font-weight: bold
+  &__photo
+    display: flex
+    align-items: center
+    width: 100%
+    height: 240px
+    border-radius: 10px
+    background: #f8f8f8
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    margin: 20px auto 8px
+    font-size: 20px
+  &__position
+    font-size: 14px
+    font-weight: 100
+    color: #999
+    line-height: 1.14
+  .btn
+    margin: 16px auto 0
+    padding: 0 10px
+    width: 100%
+    font-size: 16px
+
+/*==========  section about-block-containers end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
 
 
 /*==========  section  ==========*/

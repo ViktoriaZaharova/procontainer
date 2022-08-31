@@ -14,7 +14,6 @@ $(function () {
         }
 
     });
-
     // hidden list > 5
 
     // show list all
@@ -27,8 +26,15 @@ $(function () {
             $(this).hide();
         }
     });
-
     // show list all
 
 
+});
+
+
+$('.completed-projects-slider').slick({
+    slidesToShow: 3,
+    dots: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });

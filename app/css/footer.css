@@ -1,4 +1,86 @@
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section footer ==========*/
+footer {
+  background: #f8f8f8;
+  padding: 70px 0; }
+
+.footer-box {
+  margin: 0 0 50px; }
+  .footer-box__title {
+    margin: 0 0 25px;
+    color: #212121;
+    font-size: 20px;
+    font-weight: 300; }
+    .footer-box__title:hover {
+      color: #162ee7; }
+
+.footer-menu li {
+  margin: 0 0 20px; }
+  .footer-menu li:last-child {
+    margin: 0; }
+  .footer-menu li a {
+    color: #212121; }
+    .footer-menu li a:hover {
+      color: #162ee7; }
+
+.footer-item {
+  margin: 0 0 15px; }
+  .footer-item:last-child {
+    margin: 0; }
+  .footer-item a {
+    color: #212121; }
+    .footer-item a:hover {
+      color: #162ee7; }
+
+.tel {
+  font-weight: 500;
+  margin: 0 0 10px; }
+
+.list-bank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-bank li {
+    margin: 0 29px 10px 0; }
+    .list-bank li:last-child {
+      margin: 0 0 10px; }
+
+.social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .social-box p {
+    margin: 0 24px 0 0;
+    line-height: 1.38;
+    max-width: 90px; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .list-social li {
+    margin: 0 16px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      width: 40px;
+      height: 40px;
+      min-width: 40px; }
+      .list-social li a img {
+        width: 100%; }
+
+/*==========  section footer end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
