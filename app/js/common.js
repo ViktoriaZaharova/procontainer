@@ -12,7 +12,6 @@ $(function () {
             $(this).find('li').slice(10).hide();
             $(this).parents('.sidebar-box').append('<a href="#" class="load-more-link">Еще <span>5</span></a>');
         }
-
     });
     // hidden list > 5
 
@@ -28,7 +27,6 @@ $(function () {
     });
     // show list all
 
-
 });
 
 
@@ -36,5 +34,38 @@ $('.completed-projects-slider').slick({
     slidesToShow: 3,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
+
+$('.btn-burger').on('click', function () {
+   $('header .navbar').fadeToggle();
+});
+
+$('.btn-close-navbar').on('click', function () {
+    $('header .navbar').fadeToggle();
+});
+
+$('.btn-filter').on('click', function () {
+   $('.sidebar').fadeToggle();
+});
+
+$('.btn-close-sidebar').on('click', function () {
+    $('.sidebar').fadeOut();
+});
+
+
+

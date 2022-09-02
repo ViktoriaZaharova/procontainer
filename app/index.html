@@ -35,6 +35,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex flex-wrap align-items-center">
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
         <nav class="navbar">
@@ -85,7 +91,9 @@
             </a>
             <div class="dropdown-menu dropdown-search">
               <form class="form-search">
-                <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                <label>
+                  <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                </label>
                 <button class="btn btn-accent btn-outline-success" type="submit">Найти</button>
               </form>
             </div>
@@ -292,7 +300,7 @@
 <div class="advantages">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-3 col-md-6 mb-30">
+      <div class="col-12 col-lg-3 col-sm-6 mb-30">
         <div class="advantages-box">
           <div class="advantages-box__icon"><img src="img/factory.png" alt=""></div>
           <div class="advantages-box__title">Собственное
@@ -306,7 +314,7 @@
             короткий срок</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3 col-md-6 mb-30">
+      <div class="col-12 col-lg-3 col-sm-6 mb-30">
         <div class="advantages-box">
           <div class="advantages-box__icon"><img src="img/certificate.png" alt=""></div>
           <div class="advantages-box__title">Сертифицированные
@@ -320,7 +328,7 @@
             безопасность материалов</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3 col-md-6 mb-30">
+      <div class="col-12 col-lg-3 col-sm-6 mb-30">
         <div class="advantages-box">
           <div class="advantages-box__icon"><img src="img/shield.png" alt=""></div>
           <div class="advantages-box__title">Комплексный подход
@@ -333,7 +341,7 @@
             объекте</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3 col-md-6 mb-30">
+      <div class="col-12 col-lg-3 col-sm-6 mb-30">
         <div class="advantages-box">
           <div class="advantages-box__icon"><img src="img/document.png" alt=""></div>
           <div class="advantages-box__title">Гарантии и сервис
@@ -357,7 +365,7 @@
       <div class="col-12 text-center">
         <h2>Лучшие предложения</h2>
       </div>
-      <div class="col-12">
+      <div class="col-12 d-flex flex-wrap align-items-center">
         <nav class="navigation-tabs">
           <div class="nav nav-tabs justify-content-center" role="tablist">
             <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -371,6 +379,8 @@
             </button>
           </div>
         </nav>
+
+        <a href="#" class="btn-filter btn btn-accent d-flex d-md-none">Фильтр</a>
       </div>
     </div>
 
@@ -619,6 +629,7 @@
           </div>
           <a href="#" class="btn btn-light-grey btn-clear">Сбросить фильтры</a>
         </div>
+
         <div class="tab-content">
           <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="row">
@@ -1775,7 +1786,7 @@
 <section class="about-company">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-5 d-flex flex-wrap">
         <div class="about-company__image"><img src="img/image2.png" alt=""></div>
         <div class="about-company-description">
           <div class="about-company-description__title">
@@ -1798,7 +1809,7 @@
 
       <div class="col-12 col-lg-7">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company__info">
               <h2>Наши блок-контейнеры</h2>
 
@@ -1813,7 +1824,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="warranty-clients">
               <img src="img/image3.png" alt="">
               <p>Нашим клиентам
@@ -1823,7 +1834,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company-box">
               <div class="about-company-box__number">01</div>
               <div class="about-company-box__title">Универсальные</div>
@@ -1836,7 +1847,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company-box">
               <div class="about-company-box__number">02</div>
               <div class="about-company-box__title">Надежные</div>
@@ -1848,7 +1859,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company-box">
               <div class="about-company-box__number">03</div>
               <div class="about-company-box__title">Мобильные</div>
@@ -1859,7 +1870,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company-box">
               <div class="about-company-box__number">04</div>
               <div class="about-company-box__title">Не требуют строительства</div>
@@ -1870,7 +1881,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company-box">
               <div class="about-company-box__number">05</div>
               <div class="about-company-box__title">Безопасные</div>
@@ -1882,7 +1893,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-sm-6">
             <div class="about-company-box">
               <div class="about-company-box__number">06</div>
               <div class="about-company-box__title">Гибкие</div>
@@ -2137,7 +2148,7 @@
 <section class="about-block-containers">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-8">
+      <div class="col-12 col-md-7 col-lg-8">
         <h2>Наши блок-контейнеры:</h2>
 
         <ul class="list-dots my-ul">
@@ -2190,7 +2201,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-md-5 col-lg-4">
         <div class="manager-box">
           <div class="subtitle">Есть вопросы?</div>
           <div class="box-text">
@@ -2306,6 +2317,55 @@
     </div>
   </div>
 </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Заказать обратный звонок</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Оставьте заявку и мы перезвоним Вам!</div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваш телефон" name="phone">
+          </label>
+          <label>
+            <textarea name="message" placeholder="Комментарии"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent btn-md">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Спасибо!
+          </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Ваша заявка принята, ожидайте звонка</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>

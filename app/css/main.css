@@ -410,6 +410,7 @@
     position: relative;
     overflow: hidden;
     height: 290px;
+    width: 100%;
     border-radius: 14px; }
     .completed-projects-slider__item img {
       width: 100%;
@@ -474,7 +475,8 @@
 .composition-blocks-item {
   position: absolute;
   text-align: center;
-  max-width: 290px; }
+  max-width: 290px;
+  width: 100%; }
   .composition-blocks-item:before {
     content: '';
     position: absolute; }
@@ -569,7 +571,8 @@
   .advantages-block-containers-item .box-text {
     max-width: 270px;
     color: #666;
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0 auto; }
   .advantages-block-containers-item__title {
     margin: 25px auto;
     font-size: 22px;

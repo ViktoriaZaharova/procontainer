@@ -73,6 +73,76 @@ footer
 
 
 
-/*==========  section  ==========*/
+/*==========  section modal ==========*/
+.modal-dialog
+  max-width: 427px
 
-/*==========  section end  ==========*/
+
+.modal-content
+  border: solid 2px #fcc204
+    radius: 14px
+  background: #fff
+  padding: 40px 43px
+
+.modal-header
+  flex-wrap: wrap
+  width: 100%
+  padding: 0
+  border: none
+  text-align: center
+  .btn-close
+    margin: 0
+    position: absolute
+    z-index: 1
+    opacity: 1
+    padding: 0
+    top: 12px
+    right: 12px
+    background: url("../img/close.svg") no-repeat center
+      size: 100%
+    width: 13px
+    height: 14px
+    border-radius: 0
+    @include d-flex
+
+.modal-title
+  text-align: center
+  font-size: 18px
+  font-weight: 500
+  width: 100%
+  margin: 0 auto 10px
+
+.modal-subtitle
+  margin: 0 auto
+
+.modal-body
+  padding: 0
+  margin: 30px 0 0
+  width: 100%
+
+
+.form
+  label
+    margin: 0 0 16px
+  input
+    height: 40px
+    width: 100%
+    border: solid 1px #eee
+      radius: 3px
+    font-weight: 100
+    padding: 0 20px
+  textarea
+    font-weight: 100
+    padding: 26px 20px
+    border: solid 1px #eee
+      radius: 3px
+  .checkbox
+    font-size: 13px
+    font-weight: 100
+  button
+    margin: 0 auto
+
+.modal-backdrop.show
+  opacity: .75
+
+/*==========  section modal end  ==========*/

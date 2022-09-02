@@ -3,53 +3,420 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1320px)
+  .composition-blocks-item:nth-child(4)
+    right: 120px
+
+  .composition-blocks-item:nth-child(5)
+    right: 90px
+
+@media only screen and (max-width: 1200px)
+  .navbar-nav .nav-item
+    margin: 0 20px 0 0
+
+  .search-wrapper
+    margin: 0 0 0 20px
+
+  header
+    padding: 20px 0
+
+  .logo
+    max-width: 180px
+
+  .home-slider-item
+    padding: 30px
+    &__image
+      max-width: 500px
+    &__content
+      width: calc(100% - 500px)
+
+  .advantages-box
+    padding: 20px
+    &__title
+      font-size: 18px
+      margin: 20px auto
+
+  .best-offers
+    margin: 40px 0 60px
+
+  .about-company-box
+    &__title
+      margin: 10px auto 15px
+      font-size: 16px
+
+  .about-company-description
+    padding: 30px
+    p
+      margin: 20px auto
+      font-size: 16px
+      line-height: normal
+
+  .about-company__image
+    margin: 0 0 30px
+
+  .about-company-box
+    margin: 0 0 40px
+
+  .warranty-clients
+    margin: 0 0 30px
+    padding: 25px 15px
+    p
+      max-width: 138px
+
+  .about-company__info .box-text p
+    margin: 0 0 20px
+
+  .completed-projects
+    margin: 50px 0 60px
+
+  .composition-blocks-item:nth-child(4), .composition-blocks-item:nth-child(5)
+    right: 15px
+
+  .composition-blocks-item:first-child, .composition-blocks-item:nth-child(2)
+    left: 0
+
+  .social-box p
+    max-width: none
+    width: 100%
+    margin: 0 0 10px
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .btn-burger
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  header
+    .navbar
+      display: none
+      position: fixed
+      left: 0
+      top: 0
+      max-width: 300px
+      width: 100%
+      height: 100%
+      overflow-y: auto
+      background: #fff
+      z-index: 3
+      padding: 30px 15px
+      box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
+      .btn-search
+        display: none
+
+    .logo
+      margin: 0 auto 0 0
+
+    .search-wrapper
+      margin: 0
+
+    .dropdown-search
+      display: block
+      position: relative
+      box-shadow: none
+      background: transparent
+
+    .btn-outline-success
+      position: relative
+      top: 0
+      right: 0
+      border-radius: 10px
+      margin: 10px auto 0
+      width: 100%
+
+    .form-search
+      flex-wrap: wrap
+      input
+        border-radius: 10px
+        box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
+
+    .btn-close-navbar
+      @include d-flex
 
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+  .navbar-nav
+    .nav-item
+      width: 100%
+      margin: 0 0 10px
+
+  .home-slider-item
+    .box-text
+      margin: 20px 0
+      line-height: normal
+      font-size: 16px
+    &__content
+      padding: 0 20px 0 0
+      width: calc(100% - 400px)
+    &__image
+      max-width: 400px
+      height: auto
+    &__title
+      font-size: 30px
+    &__advantages
+      font-size: 16px
+      &-icon
+        width: 30px
+        min-width: 30px
+      &-text
+        max-width: none
+
+  .about-product
+    margin: 0 0 50px
+    .wrapper-content
+      padding: 30px
+    &__content
+      padding: 0
+      margin: 0 0 30px
+    .box-text
+      margin: 20px 0
+      max-width: none
+    &__subtitle
+      margin: 0 0 20px
+      max-width: none
+    .btn
+      margin: 0 auto
+
+  .navigation-tabs
+    margin: 0 0 30px
+
+  .best-offers
+    .tab-content
+      padding: 0 0 0 10px
+      width: calc(100% - 230px)
+
+  .sidebar
+    max-width: 230px
+
+  .sidebar-box
+    margin: 0 0 20px
+    &__title
+      margin: 0 0 15px
+      font-size: 16px
+
+  .checkbox
+    font-size: 14px
+
+  .list-checkbox li
+    margin: 0 0 12px
+
+  .about-company-description
+    max-width: none
+    margin: 0 auto
+    order: -1
+
+  .about-company__image
+    margin: 20px auto 0
+
+  .category
+    margin: 0 0 40px
+
+  .m-90
+    margin: 70px 0
+
+  .composition-blocks-item
+    position: relative
+    top: 0
+    right: 0
+    left: 0
+    max-width: none
+    width: 33.3%
+    bottom: 0
+    margin: 0 0 20px
+    &__title
+      font-size: 16px
+      margin: 0 auto 10px
+    &:before
+      display: none
+    &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+      max-width: 33.3%
+      right: 0
+      top: 0
+      bottom: 0
+      left: 0
+
+  .composition-blocks__image
+    padding: 0
+
+  .composition-blocks-wrapper
+    margin: 40px auto 0
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+
+  .subtitle
+    font-size: 16px
+
+  .advantages-block-containers .wrapper-content
+    padding: 30px
+
+  .advantages-block-containers-item
+    margin: 0 0 30px
+    &__title
+      min-height: auto
+      font-size: 18px
+      margin: 18px auto
+    .box-text
+      max-width: none
+
+  .about-block-containers
+    margin: 0 0 50px
+
+  footer
+    padding: 40px 0
+
+  .social-box
+    margin: 10px 0 20px
+
+  .footer-box
+    margin: 0 0 40px
+    &__title
+      margin: 0 0 20px
+
+  .footer-menu li, .footer-item
+    margin: 0 0 10px
+
+@media only screen and (max-width: 768px)
+  .btn-md
+    height: 45px
+    font-size: 16px
+
+  .home-slider-item
+    padding: 20px
+    align-items: flex-start
+    text-align: center
+    .btn
+      margin: 20px auto 0
+    &__image
+      margin: 20px auto 0
+    &__content
+      width: 100%
+      padding: 0
+    &__advantages
+      justify-content: center
+      &-text
+        text-align: left
+
+  .slick-dots
+    margin: 20px auto 0
+
+  .home
+    margin: 0 0 40px
+
+  h2
+    font-size: 24px
+    margin: 0 auto 20px
+
+  .best-offers
+    .tab-content
+      width: 100%
+      padding: 0
+    .navigation-tabs
+      width: fit-content
+      margin: 0 auto 30px 0
+
+  .btn-filter
+    margin: 0 0 30px
+
+  .sidebar
+    display: none
+    position: fixed
+    z-index: 5
+    background: #fff
+    padding: 20px 15px
+    height: 100%
+    overflow-y: auto
+    max-width: 280px
+    width: 100%
+    box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
+
+  .btn-close-sidebar
+    @include d-flex
+
+  .best-offers .btn-link
+    margin: 0 auto
+
+  .completed-projects-slider__item
+    height: 250px
+
+  .composition-blocks-item
+    &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+      max-width: 50%
+      width: 100%
+
+  .manager-box
+    margin: 30px auto 0
+
+  .about-block-containers .box-text p, .about-block-containers ul
+    margin: 0 0 20px
+
+@media only screen and (max-width: 576px)
+  .phone
+    padding: 0
+    width: auto
+    height: auto
+    display: flex
+    align-items: center
+    border: none
+      radius: 0
+
+  .phone-text
+    display: none
+
+  .phone-icon
+    margin: 0
+
+  .nav-tabs .nav-link
+    margin: 0 30px 0 0
+
+  .warranty-clients
+    max-width: none
+    p
+      max-width: none
+      width: calc(100% - 140px)
+
+  .about-company-box .box-text
+    max-width: none
+
+  .completed-projects-slider
+    margin: 30px auto 0
+
+  .completed-projects
+    margin: 30px auto 40px
+
+  .m-90
+    margin: 50px 0
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 480px)
+  .title-wrapper
+    h2
+      width: 100%
+
+  .completed-projects .title-wrapper .link-all
+    margin: 5px auto 0
+
+  .composition-blocks-item
+    &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+      max-width: none
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 420px)
+  .best-offers
+    .navigation-tabs
+      width: 100%
+      margin: 0 auto 20px
+
+  .btn-filter
+    margin: 0 auto 20px
+    width: 100%
+
+  .category-item__image
+    width: 140px
+    margin: 0 auto 14px
 
 
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (max-width: 380px)
+  .logo
+    max-width: 140px
 
