@@ -545,6 +545,9 @@ a.color-blue:hover {
 .m-90 {
   margin: 90px 0; }
 
+.mb-26 {
+  margin-bottom: 26px; }
+
 .title-wrapper h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -628,3 +631,93 @@ a.color-blue:hover {
   margin: 0 0 50px; }
   .wrapper-content-page .subtitle {
     text-align: left; }
+
+.page {
+  margin: 0 0 100px; }
+
+.nav-pagination {
+  width: 100%;
+  margin: 14px auto 0; }
+
+.pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .pagination li {
+    margin: 0 14px 0 0; }
+    .pagination li .page-link {
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #eee;
+        border-radius: 50%;
+      background: #fff;
+      color: #212121;
+      font-size: 18px;
+      font-weight: 500; }
+      .pagination li .page-link:hover {
+        background: #eee;
+        color: #212121; }
+    .pagination li.active .page-link {
+      border-color: #fcc204;
+      background: #fff;
+      color: #212121; }
+
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+  border-radius: 50%; }
+
+.list-sorting-objects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 14px;
+  font-size: 16px; }
+  .list-sorting-objects li {
+    margin: 0 16px 16px 0; }
+    .list-sorting-objects li:last-child {
+      margin: 0 0 16px; }
+    .list-sorting-objects li a {
+      padding: 6px 16px;
+      height: 40px;
+      background: #f7f7f7;
+      border: 1px solid #f7f7f7;
+        border-radius: 3px;
+      color: #212121;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .list-sorting-objects li a:hover {
+        color: #fcc204; }
+      .list-sorting-objects li a.active {
+        background: #fff;
+        border-color: #162ee7; }

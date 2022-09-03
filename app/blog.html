@@ -139,7 +139,7 @@
   </div>
 </header>
 
-<section class="page page-contacts">
+<section class="page page-objects page-blog">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -148,111 +148,220 @@
           <nav aria-label="breadcrumb" class="nav-breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Библиотека</li>
+              <li class="breadcrumb-item active" aria-current="page">Блог</li>
             </ol>
           </nav>
 
-          <h1>Контакты</h1>
+          <h1>Блог</h1>
 
-          <div class="subtitle">Контактная информация компании «Про контейнер»</div>
+          <div class="subtitle">Последние новости</div>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-12 col-lg-6 order-lg-1">
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <div class="contacts-item">
-              <div class="contacts-item__title">Адрес</div>
-              <div class="footer-item address">
-                <p>Адрес:</p>
-                <p>Москва, ул. Генерала Тюленева, 4А,
-                  стр. 3., БЦ Тёплый Стан</p>
-              </div>
-
-              <div class="footer-item schedule">
-                <p>Время работы:</p>
-                <p>пн-пт: с 08:00 до 17:00</p>
-                <p>сб-вскр: выходной</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6">
-            <div class="contacts-item">
-              <div class="contacts-item__title">Контакты</div>
-              <div class="footer-item">
-                <a href="tel:+74992816178" class="tel">8 499 281-61-78</a>
-
-                <div class="schedule">
-                  <p>Режим работы приема звонков:</p>
-                  <p>с 08:00 до 22:00 (МСК).</p>
-                </div>
-              </div>
-
-              <div class="footer-item">
-                <p>Напишите нам:</p>
-                <a href="mailto:manager@pro-container.ru" class="mail">manager@pro-container.ru</a>
-              </div>
-            </div>
+      <div class="col-12 d-flex flex-wrap">
+        <div class="sidebar-blog">
+          <div class="sidebar-blog-item">
+            <div class="sidebar-blog__title">Последние записи</div>
+            <ul class="sidebar-blog-menu">
+              <li><a href="#blog-card1" class="go_to">Почему блок-контейнер
+                является лучшим вариантом
+                для гаража под автомобиль</a></li>
+              <li><a href="#blog-card2" class="go_to">Быстро строящиеся
+                модульные здания</a></li>
+              <li><a href="#blog-card3" class="go_to">Ростверк фундамента –
+                устройство на сваях и
+                столбах монолитного и
+                сборного типа</a></li>
+            </ul>
           </div>
 
-          <div class="col-12">
-            <div class="contacts-item">
-              <div class="contacts-item__title">Есть вопросы?</div>
-              <div class="footer-item">
-                <p>Оставьте их здесь и нам менеджер свяжется с Вами</p>
-              </div>
+          <div class="sidebar-blog-item">
+            <div class="sidebar-blog__title">Категории</div>
+            <ul class="sidebar-blog-menu">
+              <li><a href="#">Блок-контейнеры</a></li>
+              <li><a href="#">Модульные здания</a></li>
+              <li><a href="#">Контейнеры</a></li>
+              <li><a href="#">Строительство</a></li>
+            </ul>
+          </div>
 
-              <form method="post" class="form form-contacts">
-                <div class="row">
-                  <div class="col-12 col-sm-6">
-                    <label>
-                      <input type="text" placeholder="Ваше имя" name="name">
-                    </label>
-                  </div>
-
-                  <div class="col-12 col-sm-6">
-                    <label>
-                      <input type="text" placeholder="Ваш телефон" name="phone">
-                    </label>
-                  </div>
-
-                  <div class="col-12">
-                    <label>
-                      <textarea name="message" placeholder="Сообщение"></textarea>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="row align-items-center">
-                  <div class="col-12 col-sm-7">
-                    <label class="checkbox">
-                      <input type="checkbox" class="inp-checkbox" checked name="checkbox">
-                      <span class="checkbox-custom"></span>
-                      <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
-                    </label>
-                  </div>
-
-                  <div class="col-12 col-sm-5">
-                    <button type="submit" class="btn btn-accent btn-md">Отправить</button>
-                  </div>
-                </div>
-              </form>
+          <div class="subscribe-box">
+            <div class="subscribe-box__title">Подпишитесь на новые
+              статьи от компании
+              «Про контейнер»
             </div>
+            <p>1 новая статья в неделю!</p>
+
+            <form method="post" class="form-subscribe form">
+              <label>
+                <input type="text" placeholder="Ваш email" name="mail">
+              </label>
+              <button type="submit" class="btn btn-accent"><img src="img/arrow-right.svg" alt=""></button>
+              <label class="checkbox">
+                <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+              </label>
+            </form>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-lg-6">
-        <div class="map">
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36060.759315454634!2d37.44843315275904!3d55.60553861154067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b552a415dffd09%3A0xbfead47d72ae10d!2z0JPQldCd0JXQoNCQ0JvQkCDQotCu0JvQldCd0JXQktCQINCi0JQ!5e0!3m2!1sru!2sua!4v1662195363991!5m2!1sru!2sua"
-              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="page-blog-content">
+          <div class="blog-card" id="blog-card1">
+            <a href="article.html" class="blog-card__title">
+              Почему блок-контейнер является лучшим вариантом для гаража под автомобиль
+            </a>
+
+            <div class="blog-card__info">
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/calendar_mini.svg" alt=""></div>
+                <p>23.07.2022</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/user.svg" alt=""></div>
+                <p>Admin</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/eye.svg" alt=""></div>
+                <p>358</p>
+              </div>
+            </div>
+
+            <a href="article.html" class="blog-card__image"><img src="img/blog-image.jpg" alt=""></a>
+
+            <div class="blog-card__description">
+              <p>Каждый автомобилист хочет, чтобы у его любимого автомобиля был свой дом – гараж. Такое сооружение спасет транспортное средство от влияния
+                погодных условий, увеличит срок службы автомобиля. Да и самому не надо сильно переживать, что автомобиль, стоящий...
+                <a href="article.html" class="d-inline color-blue ml-10 link-all">Читать дальше</a></p>
+            </div>
+
+            <div class="blog-card__footer">
+              <ul class="list-sorting-objects my-ul">
+                <li><a href="#">Блок-контейнеры</a></li>
+                <li><a href="#">Строительство</a></li>
+              </ul>
+
+              <div class="share">
+                <p>Поделиться</p>
+                <ul class="share-list my-ul">
+                  <li><a href="#"><img src="img/odnoklassniki-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/twitter-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/vk-logo.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" id="blog-card2">
+            <a href="article.html" class="blog-card__title">
+              Почему блок-контейнер является лучшим вариантом для гаража под автомобиль
+            </a>
+
+            <div class="blog-card__info">
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/calendar_mini.svg" alt=""></div>
+                <p>23.07.2022</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/user.svg" alt=""></div>
+                <p>Admin</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/eye.svg" alt=""></div>
+                <p>358</p>
+              </div>
+            </div>
+
+            <a href="article.html" class="blog-card__image"><img src="img/blog-image.jpg" alt=""></a>
+
+            <div class="blog-card__description">
+              <p>Каждый автомобилист хочет, чтобы у его любимого автомобиля был свой дом – гараж. Такое сооружение спасет транспортное средство от влияния
+                погодных условий, увеличит срок службы автомобиля. Да и самому не надо сильно переживать, что автомобиль, стоящий...
+                <a href="article.html" class="d-inline color-blue ml-10 link-all">Читать дальше</a></p>
+            </div>
+
+            <div class="blog-card__footer">
+              <ul class="list-sorting-objects my-ul">
+                <li><a href="#">Блок-контейнеры</a></li>
+                <li><a href="#">Строительство</a></li>
+              </ul>
+
+              <div class="share">
+                <p>Поделиться</p>
+                <ul class="share-list my-ul">
+                  <li><a href="#"><img src="img/odnoklassniki-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/twitter-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/vk-logo.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card" id="blog-card3">
+            <a href="article.html" class="blog-card__title">
+              Почему блок-контейнер является лучшим вариантом для гаража под автомобиль
+            </a>
+
+            <div class="blog-card__info">
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/calendar_mini.svg" alt=""></div>
+                <p>23.07.2022</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/user.svg" alt=""></div>
+                <p>Admin</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/eye.svg" alt=""></div>
+                <p>358</p>
+              </div>
+            </div>
+
+            <a href="article.html" class="blog-card__image"><img src="img/blog-image.jpg" alt=""></a>
+
+            <div class="blog-card__description">
+              <p>Каждый автомобилист хочет, чтобы у его любимого автомобиля был свой дом – гараж. Такое сооружение спасет транспортное средство от влияния
+                погодных условий, увеличит срок службы автомобиля. Да и самому не надо сильно переживать, что автомобиль, стоящий...
+                <a href="article.html" class="d-inline color-blue ml-10 link-all">Читать дальше</a></p>
+            </div>
+
+            <div class="blog-card__footer">
+              <ul class="list-sorting-objects my-ul">
+                <li><a href="#">Блок-контейнеры</a></li>
+                <li><a href="#">Строительство</a></li>
+              </ul>
+
+              <div class="share">
+                <p>Поделиться</p>
+                <ul class="share-list my-ul">
+                  <li><a href="#"><img src="img/odnoklassniki-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/twitter-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/vk-logo.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <nav class="nav-pagination">
+            <ul class="pagination">
+              <li class="page-item"><a href="#" class="page-link">1</a></li>
+              <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
 
     </div>
+
   </div>
 </section>
 

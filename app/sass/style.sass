@@ -458,6 +458,9 @@ a.color-blue
 .m-90
   margin: 90px 0
 
+.mb-26
+  margin-bottom: 26px
+
 .title-wrapper
   h2
     width: fit-content
@@ -528,5 +531,72 @@ a.color-blue
   margin: 0 0 50px
   .subtitle
     text-align: left
+
+.page
+  margin: 0 0 100px
+
+.nav-pagination
+  width: 100%
+  margin: 14px auto 0
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+  li
+    margin: 0 14px 0 0
+    .page-link
+      padding: 0
+      @include d-flex
+      width: 40px
+      height: 40px
+      border: 1px solid #eee
+        radius: 50%
+      background: #fff
+      color: #212121
+      font-size: 18px
+      font-weight: 500
+      &:hover
+        background: #eee
+        color: #212121
+    &.active
+      .page-link
+        border-color: $accent
+        background: #fff
+        color: #212121
+
+.page-item:first-child .page-link, .page-item:last-child .page-link
+  border-radius: 50%
+
+.list-sorting-objects
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 14px
+  font-size: 16px
+  li
+    margin: 0 16px 16px 0
+    &:last-child
+      margin: 0 0 16px
+    a
+      padding: 6px 16px
+      height: 40px
+      background: #f7f7f7
+      border: 1px solid #f7f7f7
+        radius: 3px
+      color: #212121
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        color: $accent
+      &.active
+        background: #fff
+        border-color: $blue
+
+
 
 
