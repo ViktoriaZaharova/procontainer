@@ -57,7 +57,11 @@
   .social-box p {
     max-width: none;
     width: 100%;
-    margin: 0 0 10px; } }
+    margin: 0 0 10px; }
+  .advantages-box-object {
+    padding: 20px 15px; }
+  .object-info {
+    padding: 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -253,7 +257,25 @@
   .page-contacts {
     margin: 0 0 140px; }
   .recommended-articles {
-    margin: 100px 0; } }
+    margin: 100px 0; }
+  .object-info {
+    margin: 30px 0 0; }
+    .object-info .box-text {
+      margin: 0 0 20px; }
+  .btn-order-project {
+    margin: 30px auto 0; }
+  .product-description {
+    margin: 50px 0 0; }
+  .catalog-gallery .object-gallery-preview {
+    margin: 0 0 30px; }
+  .catalog-info {
+    margin: 0; }
+    .catalog-info-head {
+      margin: 0 0 20px; }
+    .catalog-info-item {
+      margin: 0 0 30px; }
+      .catalog-info-item__title {
+        margin: 0 0 15px; } }
 
 @media only screen and (max-width: 768px) {
   .btn-md {
@@ -402,7 +424,32 @@
   .attention-box {
     font-size: 14px; }
   .recommended-articles {
-    margin: 60px 0; } }
+    margin: 60px 0; }
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    padding: 15px; }
+  .object-gallery-item {
+    height: 350px; }
+  .object-gallery-preview .object-gallery-item {
+    height: 120px; }
+  .characteristics-object li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .characteristics-object li span {
+      width: 100%;
+      padding: 0; }
+    .characteristics-object li p {
+      width: 100%;
+      padding: 0;
+      margin: 0 0 5px; }
+      .characteristics-object li p:before {
+        display: none; }
+  .product-description .tab-content .box-text p {
+    margin: 0 0 20px; }
+  .btn-filter {
+    margin: 0 auto 20px;
+    width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   .title-wrapper h2 {
@@ -417,19 +464,31 @@
     padding: 20px; }
   .contacts-item__title {
     font-size: 18px;
-    margin: 0 0 15px; } }
+    margin: 0 0 15px; }
+  .price-product {
+    margin: 0; }
+  .btn-order-product {
+    width: 100%;
+    margin: 20px auto 0; }
+  .product-description .navigation-tabs .nav-link {
+    width: 100%;
+    background: #f7f7f7;
+    padding: 10px 20px; }
+    .product-description .navigation-tabs .nav-link.active {
+      color: #162ee7; }
+  .product-description .tab-content {
+    padding: 20px; } }
 
 @media only screen and (max-width: 420px) {
   .best-offers .navigation-tabs {
     width: 100%;
     margin: 0 auto 20px; }
-  .btn-filter {
-    margin: 0 auto 20px;
-    width: 100%; }
   .category-item__image {
     width: 140px;
     margin: 0 auto 14px; } }
 
 @media only screen and (max-width: 380px) {
   .logo {
-    max-width: 140px; } }
+    max-width: 140px; }
+  .object-gallery-item {
+    height: 300px; } }

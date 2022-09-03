@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>ProContainer</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <nav class="navbar">
+          <a href="#" class="btn-close-navbar">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Продукты
+              </a>
+              <ul class="dropdown-menu my-ul">
+                <li><a class="dropdown-item" href="#">Жилые блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Офисные блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Блок-контейнеры Север</a></li>
+                <li><a class="dropdown-item" href="#">Санитарные блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Блок-контейнеры для КПП</a></li>
+                <li><a class="dropdown-item" href="#">Металлические бытовки</a></li>
+                <li class="drop-item"><a class="dropdown-item" href="#">Модульные здания </a>
+                  <ul class="dropdown-submenu my-ul">
+                    <li><a href="#" class="dropdown-item">Вахтовые поселки</a></li>
+                    <li><a href="#" class="dropdown-item">Административные здания</a></li>
+                    <li><a href="#" class="dropdown-item">Бытовые здания</a></li>
+                    <li><a href="#" class="dropdown-item">Жилые здания</a></li>
+                    <li><a href="#" class="dropdown-item">Здания для бизнеса</a></li>
+                    <li><a href="#" class="dropdown-item">Пункты питания</a></li>
+                    <li><a href="#" class="dropdown-item">Строительнве здания</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+            <li class="nav-item"><a class="nav-link" href="objects.html">Выполненные объекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+
+          <div class="search-wrapper dropdown">
+            <a href="#" class="btn-search dropdown-toggle" data-bs-toggle="dropdown"
+               aria-expanded="false">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
+            <div class="dropdown-menu dropdown-search">
+              <form class="form-search">
+                <label>
+                  <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                </label>
+                <button class="btn btn-accent btn-outline-success" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <a href="tel:+74992816178" class="phone">
+          <span class="phone-icon"><img src="img/phone-call.svg" alt=""></span>
+          <span class="phone-text">8 499 281-61-78</span>
+        </a>
+
+        <div class="dropdown country-wrapper">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Москва
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-country vertical-scroll">
+            <a href="#" class="dropdown-item">Москва</a>
+            <a href="#" class="dropdown-item">Санкт-Петербург</a>
+            <a href="#" class="dropdown-item">Балашиха</a>
+            <a href="#" class="dropdown-item">Подольск</a>
+            <a href="#" class="dropdown-item">Химки</a>
+            <a href="#" class="dropdown-item">Мытищи</a>
+            <a href="#" class="dropdown-item">Королев</a>
+            <a href="#" class="dropdown-item">Люберцы</a>
+            <a href="#" class="dropdown-item">Красногорск</a>
+            <a href="#" class="dropdown-item">Электросталь</a>
+            <a href="#" class="dropdown-item">Москва</a>
+            <a href="#" class="dropdown-item">Санкт-Петербург</a>
+            <a href="#" class="dropdown-item">Балашиха</a>
+            <a href="#" class="dropdown-item">Подольск</a>
+            <a href="#" class="dropdown-item">Химки</a>
+            <a href="#" class="dropdown-item">Мытищи</a>
+            <a href="#" class="dropdown-item">Королев</a>
+            <a href="#" class="dropdown-item">Люберцы</a>
+            <a href="#" class="dropdown-item">Красногорск</a>
+            <a href="#" class="dropdown-item">Электросталь</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="about-home-wrapper">
+          <nav aria-label="breadcrumb" class="nav-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Жилые блок-контейнеры</li>
+            </ol>
+          </nav>
+
+          <img src="img/about-image.jpg" alt="" class="about-home-wrapper__bg">
+
+          <h1>О компании</h1>
+
+          <div class="subtitle">Модульные конструкции для бизнеса и частного использования</div>
+        </div>
+
+        <div class="box-text">
+          <p>Компания «Про контейнер» – российский производитель модульных конструкций высокой надежности для различных
+            целей. Наши изделия применяются в строительстве, промышленности,
+            инженерии, торговле, складской и транспортной логистике, туризме, используются в качестве офисов, для
+            проживания людей.</p>
+
+          <p><strong>Стратегическая цель – перенять положительный опыт зарубежных производителей, следовать тенденциям
+            развития
+            технологий модульного строительства, адаптировать
+            быстровозводимые конструкции для эксплуатации в России и повысить качество готового продукта.</strong></p>
+
+          <p>Компания ориентирована на рынок модульных конструкций в трех сегментах:</p>
+        </div>
+
+        <ol class="list-number my-ul">
+          <li>Блок-контейнеры: жилые, офисные, санитарные, технические, бытовые, для КПП.</li>
+          <li>Контейнеры: морские, складские, сантехнические.</li>
+          <li>Модульные здания – полноценные сооружения, состоящие из нескольких блок-модулей. Площадь может достигать
+            нескольких тысяч квадратных метров. Назначение
+            преимущественно административное, жилое. Офисно-бытовые комплексы, общежития, гостиницы, больницы,
+            санатории, столовые.
+          </li>
+        </ol>
+
+        <div class="box-text">
+          <p>Весь цикл изготовления и комплектации обособленных блок-контейнеров, составных модулей осуществляется на
+            заводе. Клиентам поставляются конструкции, готовые к эксплуатации сразу
+            после установки.</p>
+
+          <p>Производственный процесс организуют и контролируют опытные инженеры, конструкторы, монтеры, маляры,
+            электрики.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Наша команда</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 mb-30">
+        <div class="team-box">
+          <div class="team-box__photo"><img src="img/lead1.jpg" alt=""></div>
+          <div class="team-box__body">
+            <div class="team-box__name">Григорий Лебедев</div>
+            <div class="team-box__position">Руководитель отдела развития</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-30">
+        <div class="team-box">
+          <div class="team-box__photo"><img src="img/lead2.jpg" alt=""></div>
+          <div class="team-box__body">
+            <div class="team-box__name">Григорий Лебедев</div>
+            <div class="team-box__position">Генеральный директор</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-30">
+        <div class="team-box">
+          <div class="team-box__photo"><img src="img/lead3.jpg" alt=""></div>
+          <div class="team-box__body">
+            <div class="team-box__name">Григорий Лебедев</div>
+            <div class="team-box__position">Модульное строительство - проектирование</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-30">
+        <div class="team-box">
+          <div class="team-box__photo"><img src="img/lead4.jpg" alt=""></div>
+          <div class="team-box__body">
+            <div class="team-box__name">Григорий Лебедев</div>
+            <div class="team-box__position">Модульное строительство - проектирование</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="history-company">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>История развития компании</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+
+<!--        <div class="slider-wrapper">-->
+<!--          <div class="history-company-dates">-->
+<!--            <div class="slide">-->
+<!--              <div class="history-company-dates__item">2008</div>-->
+<!--            </div>-->
+<!--            <div class="slide">-->
+<!--              <div class="history-company-dates__item">2011</div>-->
+<!--            </div>-->
+<!--            <div class="slide">-->
+<!--              <div class="history-company-dates__item">2010</div>-->
+<!--            </div>-->
+<!--            <div class="slide">-->
+<!--              <div class="history-company-dates__item">2015</div>-->
+<!--            </div>-->
+<!--            <div class="slide">-->
+<!--              <div class="history-company-dates__item">2018</div>-->
+<!--            </div>-->
+<!--            <div class="slide">-->
+<!--              <div class="history-company-dates__item">2021</div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">-->
+<!--            <div class="progress-bg"></div>-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+        <div class="slider-dots history-company-slider-dots">
+          <div class="slider-dots__item active" data-index="1">
+            2008
+          </div>
+          <div class="slider-dots__item" data-index="2">
+            2011
+          </div>
+          <div class="slider-dots__item" data-index="3">
+            2010
+          </div>
+          <div class="slider-dots__item" data-index="4">
+            2015
+          </div>
+          <div class="slider-dots__item" data-index="5">
+            2018
+          </div>
+          <div class="slider-dots__item" data-index="6">
+            2021
+          </div>
+        </div>
+
+        <div class="history-company-slider">
+          <div class="slide">
+            <div class="history-company-item">
+              <div class="row">
+                <div class="col-12 col-lg-6 order-lg-1">
+                  <div class="history-company-item__text">
+                    <div class="box-text">
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. Наши изделия применяются в строительстве,
+                        промышленности, инженерии, торговле, складской и транспортной логистике, туризме,
+                        используются в качестве офисов, для проживания людей.</p>
+
+                      <ul class="list-dots my-ul">
+                        <li>универсальные - их можно использовать как дачные домики или садовую бытовку,
+                          посты охраны, КПП, жилой дом временного проживания, офис, торговый склад для
+                          продукции, прорабскую с комнатой отдыха, хозяйственное помещение или мобильную
+                          лабораторию, строительные городки, штаб строительства, блок-контейнер
+                          строительный, строительные вагончики, хозблоки, промышленные и сантехнические
+                          модули;
+                        </li>
+                        <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой
+                          выдерживает вес двух таких же контейнеров, установленных друг на друга;
+                        </li>
+                        <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом
+                          автомобиле без сопровождения и спец. разрешений.
+                        </li>
+                      </ul>
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="history-company__image"><img src="img/about-image2.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="history-company-item">
+              <div class="row">
+                <div class="col-12 col-lg-6 order-lg-1">
+                  <div class="history-company-item__text">
+                    <div class="box-text">
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. Наши изделия применяются в строительстве,
+                        промышленности, инженерии, торговле, складской и транспортной логистике, туризме,
+                        используются в качестве офисов, для проживания людей.</p>
+
+                      <ul class="list-dots my-ul">
+                        <li>универсальные - их можно использовать как дачные домики или садовую бытовку,
+                          посты охраны, КПП, жилой дом временного проживания, офис, торговый склад для
+                          продукции, прорабскую с комнатой отдыха, хозяйственное помещение или мобильную
+                          лабораторию, строительные городки, штаб строительства, блок-контейнер
+                          строительный, строительные вагончики, хозблоки, промышленные и сантехнические
+                          модули;
+                        </li>
+                        <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой
+                          выдерживает вес двух таких же контейнеров, установленных друг на друга;
+                        </li>
+                        <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом
+                          автомобиле без сопровождения и спец. разрешений.
+                        </li>
+                      </ul>
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="history-company__image"><img src="img/about-image2.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="history-company-item">
+              <div class="row">
+                <div class="col-12 col-lg-6 order-lg-1">
+                  <div class="history-company-item__text">
+                    <div class="box-text">
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. Наши изделия применяются в строительстве,
+                        промышленности, инженерии, торговле, складской и транспортной логистике, туризме,
+                        используются в качестве офисов, для проживания людей.</p>
+
+                      <ul class="list-dots my-ul">
+                        <li>универсальные - их можно использовать как дачные домики или садовую бытовку,
+                          посты охраны, КПП, жилой дом временного проживания, офис, торговый склад для
+                          продукции, прорабскую с комнатой отдыха, хозяйственное помещение или мобильную
+                          лабораторию, строительные городки, штаб строительства, блок-контейнер
+                          строительный, строительные вагончики, хозблоки, промышленные и сантехнические
+                          модули;
+                        </li>
+                        <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой
+                          выдерживает вес двух таких же контейнеров, установленных друг на друга;
+                        </li>
+                        <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом
+                          автомобиле без сопровождения и спец. разрешений.
+                        </li>
+                      </ul>
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="history-company__image"><img src="img/about-image2.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="history-company-item">
+              <div class="row">
+                <div class="col-12 col-lg-6 order-lg-1">
+                  <div class="history-company-item__text">
+                    <div class="box-text">
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. Наши изделия применяются в строительстве,
+                        промышленности, инженерии, торговле, складской и транспортной логистике, туризме,
+                        используются в качестве офисов, для проживания людей.</p>
+
+                      <ul class="list-dots my-ul">
+                        <li>универсальные - их можно использовать как дачные домики или садовую бытовку,
+                          посты охраны, КПП, жилой дом временного проживания, офис, торговый склад для
+                          продукции, прорабскую с комнатой отдыха, хозяйственное помещение или мобильную
+                          лабораторию, строительные городки, штаб строительства, блок-контейнер
+                          строительный, строительные вагончики, хозблоки, промышленные и сантехнические
+                          модули;
+                        </li>
+                        <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой
+                          выдерживает вес двух таких же контейнеров, установленных друг на друга;
+                        </li>
+                        <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом
+                          автомобиле без сопровождения и спец. разрешений.
+                        </li>
+                      </ul>
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="history-company__image"><img src="img/about-image2.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="history-company-item">
+              <div class="row">
+                <div class="col-12 col-lg-6 order-lg-1">
+                  <div class="history-company-item__text">
+                    <div class="box-text">
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. Наши изделия применяются в строительстве,
+                        промышленности, инженерии, торговле, складской и транспортной логистике, туризме,
+                        используются в качестве офисов, для проживания людей.</p>
+
+                      <ul class="list-dots my-ul">
+                        <li>универсальные - их можно использовать как дачные домики или садовую бытовку,
+                          посты охраны, КПП, жилой дом временного проживания, офис, торговый склад для
+                          продукции, прорабскую с комнатой отдыха, хозяйственное помещение или мобильную
+                          лабораторию, строительные городки, штаб строительства, блок-контейнер
+                          строительный, строительные вагончики, хозблоки, промышленные и сантехнические
+                          модули;
+                        </li>
+                        <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой
+                          выдерживает вес двух таких же контейнеров, установленных друг на друга;
+                        </li>
+                        <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом
+                          автомобиле без сопровождения и спец. разрешений.
+                        </li>
+                      </ul>
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="history-company__image"><img src="img/about-image2.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="history-company-item">
+              <div class="row">
+                <div class="col-12 col-lg-6 order-lg-1">
+                  <div class="history-company-item__text">
+                    <div class="box-text">
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. Наши изделия применяются в строительстве,
+                        промышленности, инженерии, торговле, складской и транспортной логистике, туризме,
+                        используются в качестве офисов, для проживания людей.</p>
+
+                      <ul class="list-dots my-ul">
+                        <li>универсальные - их можно использовать как дачные домики или садовую бытовку,
+                          посты охраны, КПП, жилой дом временного проживания, офис, торговый склад для
+                          продукции, прорабскую с комнатой отдыха, хозяйственное помещение или мобильную
+                          лабораторию, строительные городки, штаб строительства, блок-контейнер
+                          строительный, строительные вагончики, хозблоки, промышленные и сантехнические
+                          модули;
+                        </li>
+                        <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой
+                          выдерживает вес двух таких же контейнеров, установленных друг на друга;
+                        </li>
+                        <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом
+                          автомобиле без сопровождения и спец. разрешений.
+                        </li>
+                      </ul>
+                      <p>Компания «Про контейнер» – российский производитель модульных конструкций
+                        высокой надежности для различных целей. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="history-company__image"><img src="img/about-image2.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages-block-containers m-90">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapper-content">
+          <h2>Почему мы?</h2>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="advantages-block-containers-item advantages-block-containers-item-about">
+                <div class="advantages-block-containers-item__icon"><img src="img/star-rating.png" alt=""></div>
+                <div class="advantages-block-containers-item__title">Высокое качество</div>
+                <div class="box-text">
+                  <p>Срок изготовления 1-2 недели.
+                    Установка блок- контейнера
+                    на месте занимает пару часов,
+                    сборка модульного здания –
+                    от 1 дня до пары недель</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="advantages-block-containers-item advantages-block-containers-item-about">
+                <div class="advantages-block-containers-item__icon"><img src="img/factory.png" alt=""></div>
+                <div class="advantages-block-containers-item__title">Собственное производство</div>
+                <div class="box-text">
+                  <p>Реализуем любой проект и воплощаем нестандартные
+                    идеи в плане конструирования, планировки,
+                    отделки, оснастки блок-модулей</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="advantages-block-containers-item advantages-block-containers-item-about">
+                <div class="advantages-block-containers-item__icon"><img src="img/prototyping.png" alt=""></div>
+                <div class="advantages-block-containers-item__title">Готовые решения
+                </div>
+                <div class="box-text">
+                  <p>Есть масса уже готовых планировочных решений,
+                    которые мы адаптируем под ваши задачи. Без затрат
+                    на индивидуальное проектирование и сборку
+                    концептуально нового модуля</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="advantages-block-containers-item advantages-block-containers-item-about">
+                <div class="advantages-block-containers-item__icon"><img src="img/welding.png" alt=""></div>
+                <div class="advantages-block-containers-item__title">Изготовление по ключ</div>
+                <div class="box-text">
+                  <p>Сварочный, сборочный, покрасочный цеха позволяют
+                    выполнить весь цикл производства и доставить
+                    продукт клиенту готовым к эксплуатации</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="advantages-block-containers-item advantages-block-containers-item-about">
+                <div class="advantages-block-containers-item__icon"><img src="img/document.png" alt=""></div>
+                <div class="advantages-block-containers-item__title">Гарантии</div>
+                <div class="box-text">
+                  <p>На все модульные конструкции нашего производства
+                    действует гарантия 2 года. Контейнеры поставляются
+                    в заводской целостности, без повреждений,
+                    готовые к перевозке или хранению груза</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="advantages-block-containers-item advantages-block-containers-item-about">
+                <div class="advantages-block-containers-item__icon"><img src="img/gear.png" alt=""></div>
+                <div class="advantages-block-containers-item__title">Сервис</div>
+                <div class="box-text">
+                  <p>Бесплатное консультирование. Ответы на любые
+                    вопросы по выбору проекта, монтажу, эксплуатации
+                    продукта. Обслуживание модульных конструкций
+                    экспертами производителя</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calculate-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="calculate-project-wrapper">
+          <div class="calculate-project-wrapper__content">
+            <h2>Рассчитать проект</h2>
+            <div class="box-text">
+              <p>Расскажите, для каких целей вам нужен блок-модуль,
+                и мы поможем подобрать оптимальное решение</p>
+            </div>
+
+            <a href="#" class="btn btn-md btn-accent">Заказать расчет</a>
+          </div>
+
+          <div class="calculate-project-wrapper__image">
+            <img src="img/about-image3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Продукты</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Модульные здания</a></li>
+            <li><a href="#">Жилые блок-контейнеры</a></li>
+            <li><a href="#">Блок контейнеры под офис</a></li>
+            <li><a href="#">Блок-контейнеры Север</a></li>
+            <li><a href="#">Сантехнические блок-контейнеры</a></li>
+            <li><a href="#">Блок-контейнеры для охраны</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Сферы</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Вахтовые поселки</a></li>
+            <li><a href="#">Строительные здания</a></li>
+            <li><a href="#">Административные здания</a></li>
+            <li><a href="#">Пункты питания</a></li>
+            <li><a href="#">Жилые здания</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">О нас</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Наши объекты</a></li>
+            <li><a href="#">Мы пишем</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Контакты</a>
+
+          <div class="footer-item">
+            <a href="tel:+74992816178" class="tel">8 499 281-61-78</a>
+
+            <div class="schedule">
+              <p>Режим работы приема звонков:</p>
+              <p>с 08:00 до 22:00 (МСК).</p>
+            </div>
+          </div>
+
+          <div class="footer-item address">
+            <p>Адрес:</p>
+            <p>Москва, ул. Генерала Тюленева, 4А,
+              стр. 3., БЦ Тёплый Стан</p>
+          </div>
+
+          <div class="footer-item">
+            <p>Напишите нам:</p>
+            <a href="mailto:manager@pro-container.ru" class="mail">manager@pro-container.ru</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <ul class="list-bank my-ul">
+          <li><a href="#"><img src="img/VIZA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/MS.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/MIR.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/SBER.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/ALFA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/KHALVA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/SPB.svg" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <div class="social-box">
+          <p>Следите за
+            новостями</p>
+
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/odnoklassniki.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/vkontakte.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="copyright">Pro Container © 2022</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Заказать обратный звонок</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Оставьте заявку и мы перезвоним Вам!</div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваш телефон" name="phone">
+          </label>
+          <label>
+            <textarea name="message" placeholder="Комментарии"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent btn-md">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Спасибо!
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Ваша заявка принята, ожидайте звонка</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

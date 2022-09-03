@@ -463,6 +463,17 @@ h2 {
     background: #fcc204;
     fill: #212121; }
 
+.slick-arrow-my {
+  background: rgba(33, 33, 33, 0.3);
+  fill: #fff; }
+  .slick-arrow-my:hover {
+    background: rgba(33, 33, 33, 0.6);
+    fill: #fff; }
+  .slick-arrow-my.slick-prev {
+    left: 0; }
+  .slick-arrow-my.slick-next {
+    right: 0; }
+
 .nav-tabs {
   border: none;
   font-size: 14px;
@@ -721,3 +732,39 @@ a.color-blue:hover {
       .list-sorting-objects li a.active {
         background: #fff;
         border-color: #162ee7; }
+
+.box-text {
+  line-height: 1.63; }
+
+.list-number {
+  counter-reset: item; }
+  .list-number li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 20px; }
+    .list-number li:last-child {
+      margin: 0; }
+    .list-number li:before {
+      content: counters(item, ".");
+      counter-increment: item;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background: #fcc204;
+      margin: 0 12px 0 0;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      font-size: 18px;
+      font-weight: 500; }

@@ -12,35 +12,44 @@
   background: #f8f8f8
   border-radius: 14px
   padding: 40px 50px 40px 70px
+
   &__image
     @include d-flex
     max-width: 793px
     width: 100%
     height: 415px
+
     img
       max-height: 100%
+
   &__content
     width: calc(100% - 793px)
     padding: 0 50px 0 0
+
   &__title
     font-size: 40px
     font-weight: bold
+
   .box-text
     margin: 30px 0
     font-size: 20px
     font-weight: 300
     line-height: 1.5
+
   &__advantages
     font-size: 18px
     font-weight: 500
     display: flex
     align-items: center
+
     &-icon
       width: 42px
       min-width: 42px
       margin: 0 14px 0 0
+
     &-text
       max-width: 255px
+
   .btn
     margin: 30px 0 0
 
@@ -57,12 +66,15 @@
   flex: 1
   color: $text
   margin: 0 0 30px
+
   &:hover
     color: $blue
+
   &__name
     max-width: 130px
     margin: 0 auto
     display: block
+
   &__image
     @include d-flex
     margin: 0 auto 24px
@@ -71,6 +83,7 @@
     background: #f8f8f8
     border-radius: 10px
     padding: 10px
+
     img
       max-height: 100%
 
@@ -81,18 +94,24 @@
 /*==========  section about-product ==========*/
 .about-product
   margin: 0 0 90px
+
   .wrapper-content
     padding: 36px 0 0 50px
+
   &__content
     padding: 20px 0 55px
+
   &__image
     width: 100%
+
     img
       width: 100%
+
   .box-text
     color: #666
     max-width: 522px
     margin: 30px 0
+
   &__subtitle
     font-weight: 500
     max-width: 460px
@@ -111,13 +130,17 @@
     radius: 10px
   background-color: #fff
   padding: 46px 27px 30px
+
   p
     color: #666
+
   &__icon
     height: 54px
     @include d-flex
+
     img
       max-height: 100%
+
   &__title
     font-weight: 700
     font-size: 22px
@@ -131,8 +154,10 @@
 /*==========  section best-offers ==========*/
 .best-offers
   margin: 60px 0 90px
+
   .btn-link
-    margin: 20px 0 0 270px
+    margin: 20px auto
+
   .tab-content
     width: calc(100% - 248px)
     padding: 0 0 0 50px
@@ -150,22 +175,29 @@
     radius: 10px
   padding: 20px
   position: relative
+
   &__img
     width: 100%
     height: 200px
     @include d-flex
+
     img
       max-height: 100%
+
   &__body
     width: 100%
     margin: 20px 0 0
+
   &__title
     color: #212121
     font-weight: 500
+
     &:hover
       color: $accent
+
   .list-characteristics
     margin: 20px 0
+
   &__footer
     width: 100%
     display: flex
@@ -175,6 +207,7 @@
 
   &:hover
     box-shadow: 0.4px 8px 29px 0 rgba(45, 45, 45, 0.14)
+
     .btn
       background: $accent
 
@@ -182,10 +215,13 @@
   font-size: 14px
   font-weight: 100
   color: #666
+
   li
     margin: 0 0 5px
+
     &:last-child
       margin: 0
+
     span
       color: $text
       margin: 0 0 0 5px
@@ -210,9 +246,11 @@
 .sidebar
   max-width: 248px
   width: 100%
+
   &-box
     width: 100%
     margin: 0 0 40px
+
     &__title
       font-size: 18px
       font-weight: 500
@@ -241,20 +279,25 @@
 .about-company
   h2
     margin: 0 0 26px
+
   &__image
     max-width: 490px
     width: 100%
     @include d-flex
     margin: 0 auto 57px
+
   &__info
 
     margin: 0 0 30px
+
     .box-text
       text-transform: uppercase
       color: #666
       font-size: 14px
+
       p
         margin: 0 0 30px
+
         &:last-child
           margin: 0
 
@@ -265,20 +308,24 @@
   max-width: 540px
   width: 100%
   margin: 0 auto 0 0
+
   &__title
     display: flex
     align-items: center
     flex-wrap: wrap
     font-size: 22px
     font-weight: bold
+
     img
       margin: 0 0 0 17px
       max-width: 188px
+
   p
     margin: 28px 0 29px
     font-size: 20px
     font-weight: 300
     line-height: 1.5
+
   .box-text
     p
       font-size: 16px
@@ -287,19 +334,23 @@
 
 .about-company-box
   margin: 0 0 50px
+
   .box-text
     color: #666666
     font-weight: 300
     font-size: 16px
     max-width: 302px
+
   &__title
     font-size: 18px
     font-weight: 500
     margin: 16px 0 18px
     line-height: 1.22
+
   &__number
     font-size: 18px
     font-weight: 500
+
     &:after
       content: '.'
       font-size: 26px
@@ -318,6 +369,7 @@
   font-weight: 500
   overflow: hidden
   margin: 0 0 50px
+
   img
     position: absolute
     left: 0
@@ -333,34 +385,43 @@
 /*==========  section completed-projects ==========*/
 .completed-projects
   margin: 70px 0 90px
+
   .title-wrapper
     justify-content: center
     display: flex
     align-items: flex-end
     flex-wrap: wrap
+
     .link-all
       margin: 0 0 4px 10px
 
 .completed-projects-slider
   margin: 50px auto 0
+
   .slick-prev
     left: -124px
+
   .slick-next
     right: -124px
+
   .slick-list
     margin: 0 -13px
+
   .slick-slide
     padding: 0 13px
+
   &__item
     position: relative
     overflow: hidden
     height: 290px
     width: 100%
     border-radius: 14px
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
     .hover-item
       position: absolute
       left: 0
@@ -376,6 +437,7 @@
       flex-direction: column
       align-items: center
       justify-content: center
+
       &:before
         content: ''
         width: 26px
@@ -383,6 +445,7 @@
         background: url("../img/search.svg") no-repeat center
           size: 100%
         margin: 0 auto 37px
+
     &:hover
       .hover-item
         display: flex
@@ -409,23 +472,28 @@
   text-align: center
   max-width: 290px
   width: 100%
+
   &:before
     content: ''
     position: absolute
 
   p
     color: #666
+
   &__title
     font-size: 18px
     font-weight: 500
     margin: 0 auto 16px
+
   &__icon
     margin: 0 auto 18px
     @include d-flex
+
   &:first-child
     left: 160px
     bottom: 160px
     max-width: 205px
+
     &:before
       width: 267px
       height: 39px
@@ -433,10 +501,12 @@
         size: 100%
       top: -50px
       right: -200px
+
   &:nth-child(2)
     max-width: 250px
     top: 150px
     left: 160px
+
     &:before
       background: url("../img/arrow-compound1.png") no-repeat center
         size: 100%
@@ -444,10 +514,12 @@
       height: 76px
       bottom: -88px
       right: -200px
+
   &:nth-child(3)
     top: 0
     left: 43%
     max-width: 240px
+
     &:before
       background: url("../img/arrow-compound2.png") no-repeat center
         size: 100%
@@ -455,10 +527,12 @@
       height: 98px
       bottom: -109px
       right: 20px
+
   &:nth-child(4)
     max-width: 270px
     right: 190px
     top: 160px
+
     &:before
       background: url("../img/arrow-compound3.png") no-repeat center
         size: 100%
@@ -466,13 +540,16 @@
       height: 108px
       bottom: -123px
       left: -70px
+
   &:nth-child(5)
     right: 160px
     bottom: 110px
     max-width: 300px
+
   &:nth-child(6)
     left: 45%
     bottom: 0
+
     &:before
       background: url("../img/arrow-compound4.png") no-repeat center
         size: 100%
@@ -480,7 +557,6 @@
       height: 112px
       top: -130px
       left: 0
-
 
 
 /*==========  section composition-blocks end  ==========*/
@@ -492,22 +568,26 @@
   h2
     margin: 0 auto 60px
     text-align: center
+
   .wrapper-content
     padding: 70px 60px 17px 59px
 
 .advantages-block-containers-item
   margin: 0 0 53px
   text-align: center
+
   .box-text
     max-width: 270px
     color: #666
     font-size: 16px
     margin: 0 auto
+
   &__title
     margin: 25px auto
     font-size: 22px
     font-weight: bold
     min-height: 48px
+
   &__icon
     margin: 0 auto
     @include d-flex
@@ -520,17 +600,23 @@
 /*==========  section about-block-containers ==========*/
 .about-block-containers
   margin: 0 0 103px
+
   ul
     margin: 0 0 30px
     line-height: 1.38
+
     li
       margin: 0 0 10px
+
       &:last-child
         margin: 0
+
   .box-text
     line-height: 1.63
+
     p
       margin: 0 0 30px
+
       &:last-child
         margin: 0
 
@@ -543,13 +629,16 @@
   width: 100%
   margin-left: auto
   text-align: center
+
   .box-text
     line-height: 1.38
     text-align: center
     margin: 16px auto
+
   .subtitle
     font-size: 22px
     font-weight: bold
+
   &__photo
     display: flex
     align-items: center
@@ -558,18 +647,22 @@
     border-radius: 10px
     background: #f8f8f8
     overflow: hidden
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__name
     margin: 20px auto 8px
     font-size: 20px
+
   &__position
     font-size: 14px
     font-weight: 100
     color: #999
     line-height: 1.14
+
   .btn
     margin: 16px auto 0
     padding: 0 10px
@@ -591,6 +684,7 @@
   max-width: 670px
   border-radius: 10px
   overflow: hidden
+
   iframe
     width: 100%
     height: 100%
@@ -598,21 +692,26 @@
 .form-contacts
   .checkbox
     margin: 0
+
   textarea
     height: 160px
     padding: 17px 20px
+
   button
     padding: 0 55px
     margin: 0 0 0 auto
 
 .contacts-item
   margin: 0 0 49px
+
   &__title
     margin: 0 0 20px
     font-size: 22px
     font-weight: bold
+
   .address
     max-width: 240px
+
   .footer-item
     margin: 0 0 20px
 /*==========  page contacts end  ==========*/
@@ -630,6 +729,7 @@
 .sidebar-blog
   width: 100%
   max-width: 230px
+
   &__title
     width: 100%
     margin: 0 0 23px
@@ -642,12 +742,16 @@
 
 .sidebar-blog-menu
   padding: 0 0 0 18px
+
   li
     margin: 0 0 25px
+
     &:last-child
       margin: 0
+
     a
       color: #212121
+
       &:hover
         color: $blue
 
@@ -659,16 +763,19 @@
   border: solid 1px #fcc204
     radius: 10px
   background-color: #fff
+
   &__title
     width: 100%
     font-size: 18px
     font-weight: 500
+
   p
     margin: 10px 0 0
 
 .form-subscribe
   margin: 16px 0 0
   position: relative
+
   button
     padding: 12px
     position: absolute
@@ -677,14 +784,18 @@
     width: 36px
     height: 36px
     border-radius: 0 3px 3px 0
+
   label
     margin: 0 0 20px
+
   .checkbox
     margin: 0
     color: #666
     font-size: 13px
+
   .checkbox-custom
     margin: 0 7px 0 0
+
   input
     background: #f7f7f7
     height: 36px
@@ -700,59 +811,73 @@
   margin: 0 0 40px
   border-bottom: 1px solid #eee
   padding: 0 0 26px
+
   &__title
     margin: 0 0 16px
     color: $text
     font-size: 22px
     font-weight: bold
     width: 100%
+
     &:hover
       color: $blue
+
   &__info
     width: 100%
     display: flex
     align-items: flex-start
     flex-wrap: wrap
+
     &-item
       margin: 0 20px 20px 0
       display: flex
       align-items: center
       font-size: 14px
       color: $text
+
       &:last-child
         margin: 0 0 20px
+
     &-icon
       @include d-flex
       margin: 0 9px 0 0
       height: 15px
       min-width: 15px
+
       img
         max-height: 15px
+
   &__image
     width: 100%
     margin: 0 0 30px
     @include d-flex
     border-radius: 10px
     overflow: hidden
+
     img
       width: 100%
+
   &__description
     margin: 35px 0
     line-height: 1.63
+
   &__footer
     width: 100%
     display: flex
     align-items: center
     flex-wrap: wrap
+
   .list-sorting-objects
     width: fit-content
     margin: 0 auto 0 0
     font-size: 14px
+
     li
       a
         height: 36px
         padding: 0 15px
         color: #666
+
         &:hover
           color: $blue
 
@@ -769,10 +894,13 @@
   align-items: center
   flex-wrap: wrap
   margin: 0 0 0 16px
+
   li
     margin: 0 8px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 30px
       height: 30px
@@ -781,8 +909,10 @@
       @include d-flex
       background: #f7f7f7
       padding: 8px
+
       img
         max-height: 100%
+
       &:hover
         background: $accent
 
@@ -793,13 +923,17 @@
 /*==========  section article page ==========*/
 .article-box
   margin: 0
+
   .box-text
     margin: 0 0 29px
     line-height: 1.63
+
     p
       margin: 0 0 30px
+
       &:last-child
         margin: 0
+
     ul
       margin: 0 0 30px
 
@@ -814,6 +948,7 @@
   margin: 40px 0
   font-weight: bold
   line-height: 1.63
+
   img
     margin: 0 18px 0 0
 
@@ -824,18 +959,23 @@
 .recommended-articles-slider
   .slide
     padding: 0 13px
+
   .slick-list
     margin: 0 -13px
+
   .slick-arrow
     width: 30px
     height: 30px
     background: rgba(#212121, .3)
     fill: #fff
     padding: 12px
+
     &:hover
       background: rgba(#212121, .6)
+
   .slick-next
     right: 0
+
   .slick-prev
     left: 0
 
@@ -848,8 +988,10 @@
   border-radius: 10px
   padding: 20px
   width: 100%
+
   &:hover
     color: $blue
+
   &__image
     @include d-flex
     margin: 0 15px 0 0
@@ -858,10 +1000,12 @@
     height: 90px
     border-radius: 5px
     overflow: hidden
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__text
     max-height: 90px
     overflow-y: hidden
@@ -869,12 +1013,13 @@
     display: flex
     align-items: center
     flex-wrap: wrap
+
     &:before
       content: ''
       position: absolute
       left: 0
       bottom: 0
-      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(247,247,247,1) 100%)
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(247, 247, 247, 1) 100%)
       width: 100%
       height: 20px
 
@@ -882,21 +1027,518 @@
 
 
 
-/*==========  section  ==========*/
+/*==========  section object page ==========*/
+.characteristics-object
+  width: 100%
+  color: #666
 
-/*==========  section end  ==========*/
+  li
+    width: 100%
+    position: relative
+    display: flex
+    align-items: flex-start
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 14px
+      width: 100%
+      height: auto
+      border-bottom: 1px dotted #dadada
+      z-index: -1
+
+    p
+      position: relative
+      padding: 0 5px 0 0
+      background: #fff
+      //min-width: 325px
+      z-index: 1
+
+    span
+      color: $text
+      display: inline-block
+      width: calc(100% - 325px)
+      margin-left: auto
+      position: relative
+      background: #fff
+
+
+.object-gallery
+  width: 100%
+
+.object-gallery-slider
+  margin: 0 0 24px
+
+.object-gallery-item
+  width: 100%
+  height: 447px
+  background: #f7f7f7
+  border-radius: 14px
+  @include d-flex
+  overflow: hidden
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.object-gallery-preview
+  .slick-slide
+    padding: 0 12px
+
+  .slick-list
+    margin: 0 -12px
+
+  .slick-arrow
+    width: 30px
+    height: 30px
+    padding: 13px
+
+  .object-gallery-item
+    height: 150px
+    cursor: pointer
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      border-radius: 10px
+      background: #f7f7f7
+      opacity: .4
+
+  .slick-current
+    .object-gallery-item
+      &:before
+        opacity: 0
+
+.object-info
+  padding: 0 0 0 25px
+
+  .box-text
+    margin: 0 0 30px
+
+.advantages-box-object
+  font-size: 14px
+  font-weight: bold
+  padding: 20px 20px 26px
+  color: $text
+
+  p
+    color: $text
+
+  .advantages-box__icon
+    margin: 0 auto 19px
+
+.btn-order-project
+  margin: 88px auto 0
+  padding: 0 34px
+/*==========  section object page end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section page catalog ==========*/
 
-/*==========  section end  ==========*/
+.catalog-gallery
+  .object-gallery-item
+    background: #fff
+    img
+      object-fit: contain
+      height: auto
+      max-height: 100%
+  .object-gallery-preview
+    margin: 0 0 60px
+
+    .object-gallery-item
+      background: #fcfcfc
+      &:before
+        background: #fff
+      img
+        height: auto
+        max-height: 100%
+        width: fit-content
+        object-fit: contain
+      
+
+  .advantages-box-object
+    padding: 20px 15px
+
+.catalog-info-item
+  margin: 0 0 36px
+
+  &:last-child
+    margin: 0
+
+  &__title
+    margin: 0 0 20px
+    font-size: 18px
+    font-weight: 500
+    width: 100%
+
+.characteristics-product
+  margin: 0
+
+  li
+    &:before
+      display: none
+
+    p
+      max-width: 249px
+      min-width: 249px
+      padding: 0 60px 0 0
+
+    span
+      width: 100%
+      padding: 0
+
+.list-radio-variable
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  li
+    margin: 0 12px 10px 0
+
+    &:last-child
+      margin: 0
+
+.radio-variable
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  text-align: center
+  color: #212121
+  line-height: 1.38
+  position: relative
+  padding: 9px 16px
+  cursor: pointer
+
+.inp-radio
+  padding: 0
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translate(-50%,0)
+  z-index: -1
+  border: 1px solid transparent
+    radius: 3px
+  background: #f7f7f7
+  width: 100%
+  height: 100%
+  &:checked
+    background: #fff
+    border-color: $accent
+
+.radio-text
+  width: 100%
+  display: block
+  text-align: center
+
+.radio-footage
+  padding: 9px 9px
+
+
+.radio-image
+  width: 60px
+  height: 60px
+  @include d-flex
+  border-radius: 3px
+  overflow: hidden
+  margin: 0 auto 11px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.radio-finishing
+  padding: 6px 0
+  flex-direction: column
+  align-items: center
+  .radio-text
+    width: fit-content
+
+  .inp-radio
+    background: transparent
+    width: calc(100% + 12px)
+
+.catalog-info-head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 46px
+
+.price-product
+  color: #666
+  margin: 0 60px 0 0
+  span
+    color: #212121
+    font-size: 22px
+    font-weight: 500
+
+.product-description
+  margin: 90px 0 0
+  .navigation-tabs
+    margin: 0
+    justify-content: flex-start
+    .nav-link
+      margin: 0
+      padding: 15px 30px
+      font-size: 18px
+      font-weight: 500
+      color: $text
+      &.active
+        background: #f7f7f7
+        text-decoration: none
+  .tab-content
+    background: #f7f7f7
+    padding: 30px 26px 55px 29px
+    .box-text
+      p
+        margin: 0 0 30px
+        &:last-child
+          margin: 0
+    .characteristics-object
+      li
+        &:before
+          display: none
+        p, span
+          background: transparent
+/*==========  section page catalog end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section about-home ==========*/
+.about-home
+  margin: 0 0 100px
+  .box-text
+    p
+      margin: 0 0 25px
+      &:last-child
+        margin: 0
+  ul, ol
+    margin: 30px 0 35px
 
-/*==========  section end  ==========*/
+.about-home-wrapper
+  position: relative
+  width: 100%
+  z-index: 1
+  padding: 46px 50px
+  color: #fff
+  min-height: 707px
+  border-radius: 14px
+  overflow: hidden
+  margin: 0 0 47px
+  h1
+    margin: 254px auto 27px
+    text-align: center
+
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.28)
+    left: 0
+    top: 0
+  .breadcrumb
+    a, .breadcrumb-item
+      color: #fff
+    .breadcrumb-item
+      &:after
+        filter: brightness(0) invert(1)
+
+.team
+  margin: 0 0 70px
+
+.team-box
+  text-align: center
+  width: 100%
+  height: 100%
+  border-radius: 10px
+  overflow: hidden
+  background: #f7f7f7
+  &__photo
+    width: 100%
+    height: 280px
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 27px 10px 34px
+  &__name
+    font-size: 20px
+    margin: 0 auto 5px
+  &__position
+    color: #999
+    font-size: 14px
+    font-weight: 100
+
+.advantages-block-containers-item-about
+  .box-text
+    max-width: 390px
+  .advantages-block-containers-item__title
+    min-height: auto
+
+.calculate-project
+  margin: 100px 0
+
+.calculate-project-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  border: solid 1px #fcc204
+    radius: 14px
+  &__image
+    margin: 0 0 0 auto
+    max-width: 874px
+    width: 100%
+  &__content
+    width: calc(100% - 874px)
+    padding: 50px 50px
+  .box-text
+    margin: 30px 0
+    color: #666
+  .btn
+    padding: 10px 33px
+
+.history-company
+  margin: 0 0 100px
+
+//.history-company-dates
+//  width: 100%
+//  padding: 0 127px
+//  .slick-current
+//    .history-company-dates__item
+//      font-size: 22px
+//      font-weight: bold
+//      &:before
+//        background: $accent
+
+.history-company-slider-dots
+  width: 100%
+  display: flex
+  align-items: flex-end
+  margin: 64px 0 50px
+  .slider-dots__item
+    flex: 1
+    position: relative
+    text-align: center
+    padding: 0 0 36px
+    font-weight: 500
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      bottom: 0
+      transform: translate(-50%,0)
+      background: #f7f7f7
+      border-radius: 50%
+      width: 16px
+      height: 16px
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 4px
+      height: 8px
+      width: 100%
+      background: #f7f7f7
+    &:first-child
+      &:after
+        border-radius: 4px 0 0 4px
+    &:last-child
+      &:after
+        border-radius: 0 4px 4px 0
+    &.active
+      font-size: 22px
+      font-weight: bold
+      &:before
+        width: 22px
+        height: 22px
+        bottom: -2px
+        background: $accent
+      &:after
+        background: $accent
+    &.dots-active
+      &:before, &:after
+        background: $accent
+
+
+.history-company-dates__item
+  font-size: 16px
+  font-weight: 500
+  text-align: center
+  position: relative
+
+
+
+.slider-wrapper
+  width: 100%
+  position: relative
+  margin: 0 0 54px
+
+.progress
+  width: 100%
+  position: absolute
+  background: #f7f7f7
+  border-radius: 4px
+  height: 8px
+  bottom: 4px
+  left: 0
+
+.progress-bg
+  position: absolute
+  left: 0
+  top: 0
+  height: 100%
+  background: $accent
+
+.history-company__image
+  height: 447px
+  @include d-flex
+  border-radius: 14px
+  max-width: 670px
+  width: 100%
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.history-company-item__text
+  padding: 0 0 0 20px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  ul
+    margin: 20px 0
+/*==========  section about-home end  ==========*/
 
 
 

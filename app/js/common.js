@@ -77,6 +77,57 @@ $('.recommended-articles-slider').slick({
     ]
 });
 
+$('.object-gallery-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    asNavFor: '.object-gallery-preview',
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
+$('.object-gallery-preview').slick({
+    slidesToShow: 4,
+    focusOnSelect: true,
+    asNavFor: '.object-gallery-slider',
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
+
+
+$('.history-company-slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    // dots: true
+});
+
+$('.slider-dots__item').click(function() {
+    var $this = $(this);
+    $('.slider-dots__item').removeClass('active');
+    $this.addClass('active');
+    $('.slider-dots__item.active').prevAll('.slider-dots__item').addClass('dots-active');
+    $('.history-company-slider').slick('slickGoTo', $this.data('index'));
+});
+
+$('.dots-active').click(function () {
+   $('.slider-dots__item').removeClass('dots-active');
+});
+
+
 $('.btn-burger').on('click', function () {
    $('header .navbar').fadeToggle();
 });
@@ -94,15 +145,14 @@ $('.btn-close-sidebar').on('click', function () {
 });
 
 
-$('.go_to').click(function (e) {
-    e.preventDefault();
-    var scroll_el = $(this).attr('href');
-    if ($(scroll_el).length !== 0) {
-        $('html, body').animate({
-            scrollTop: $(scroll_el).offset().top
-        }, 500);
-    }
-    return false;
+$(".go_to").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+        top = $(id).offset().top;
+
+    $('body,html').animate({scrollTop: top - 30}, 500);
 });
 
 

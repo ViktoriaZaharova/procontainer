@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>ProContainer</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <nav class="navbar">
+          <a href="#" class="btn-close-navbar">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Продукты
+              </a>
+              <ul class="dropdown-menu my-ul">
+                <li><a class="dropdown-item" href="#">Жилые блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Офисные блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Блок-контейнеры Север</a></li>
+                <li><a class="dropdown-item" href="#">Санитарные блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Блок-контейнеры для КПП</a></li>
+                <li><a class="dropdown-item" href="#">Металлические бытовки</a></li>
+                <li class="drop-item"><a class="dropdown-item" href="#">Модульные здания </a>
+                  <ul class="dropdown-submenu my-ul">
+                    <li><a href="#" class="dropdown-item">Вахтовые поселки</a></li>
+                    <li><a href="#" class="dropdown-item">Административные здания</a></li>
+                    <li><a href="#" class="dropdown-item">Бытовые здания</a></li>
+                    <li><a href="#" class="dropdown-item">Жилые здания</a></li>
+                    <li><a href="#" class="dropdown-item">Здания для бизнеса</a></li>
+                    <li><a href="#" class="dropdown-item">Пункты питания</a></li>
+                    <li><a href="#" class="dropdown-item">Строительнве здания</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+            <li class="nav-item"><a class="nav-link" href="objects.html">Выполненные объекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+
+          <div class="search-wrapper dropdown">
+            <a href="#" class="btn-search dropdown-toggle" data-bs-toggle="dropdown"
+               aria-expanded="false">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
+            <div class="dropdown-menu dropdown-search">
+              <form class="form-search">
+                <label>
+                  <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                </label>
+                <button class="btn btn-accent btn-outline-success" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <a href="tel:+74992816178" class="phone">
+          <span class="phone-icon"><img src="img/phone-call.svg" alt=""></span>
+          <span class="phone-text">8 499 281-61-78</span>
+        </a>
+
+        <div class="dropdown country-wrapper">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Москва
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-country vertical-scroll">
+            <a href="#" class="dropdown-item">Москва</a>
+            <a href="#" class="dropdown-item">Санкт-Петербург</a>
+            <a href="#" class="dropdown-item">Балашиха</a>
+            <a href="#" class="dropdown-item">Подольск</a>
+            <a href="#" class="dropdown-item">Химки</a>
+            <a href="#" class="dropdown-item">Мытищи</a>
+            <a href="#" class="dropdown-item">Королев</a>
+            <a href="#" class="dropdown-item">Люберцы</a>
+            <a href="#" class="dropdown-item">Красногорск</a>
+            <a href="#" class="dropdown-item">Электросталь</a>
+            <a href="#" class="dropdown-item">Москва</a>
+            <a href="#" class="dropdown-item">Санкт-Петербург</a>
+            <a href="#" class="dropdown-item">Балашиха</a>
+            <a href="#" class="dropdown-item">Подольск</a>
+            <a href="#" class="dropdown-item">Химки</a>
+            <a href="#" class="dropdown-item">Мытищи</a>
+            <a href="#" class="dropdown-item">Королев</a>
+            <a href="#" class="dropdown-item">Люберцы</a>
+            <a href="#" class="dropdown-item">Красногорск</a>
+            <a href="#" class="dropdown-item">Электросталь</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page page-objects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapper-content wrapper-content-page">
+
+          <nav aria-label="breadcrumb" class="nav-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Жилые блок-контейнеры</li>
+            </ol>
+          </nav>
+
+          <h1>Жилой блок-контейнер с туалетом и душем БК-07</h1>
+
+          <div class="subtitle">Блок-контейнеры под временные жилые помещения локального производства</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="object-gallery catalog-gallery">
+          <div class="object-gallery-slider">
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide1.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide2.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide3.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide.png" alt=""></div>
+            </div>
+          </div>
+
+          <div class="object-gallery-preview">
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide1.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide2.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide3.png" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="object-gallery-item"><img src="img/catalog-slide.png" alt=""></div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-30">
+              <div class="advantages-box advantages-box-object">
+                <div class="advantages-box__icon"><img src="img/factory.png" alt=""></div>
+                <p>Собственное
+                  производство
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-30">
+              <div class="advantages-box advantages-box-object">
+                <div class="advantages-box__icon"><img src="img/certificate.png" alt=""></div>
+                <p>Сертификаты на <br>
+                  все материалы
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-30">
+              <div class="advantages-box advantages-box-object">
+                <div class="advantages-box__icon"><img src="img/shield.png" alt=""></div>
+                <p>Комплексный
+                  подход</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-30">
+              <div class="advantages-box advantages-box-object">
+                <div class="advantages-box__icon"><img src="img/document.png" alt=""></div>
+                <p>Гарантии
+                  и сервис</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="object-info catalog-info">
+          <div class="catalog-info-head">
+            <div class="price-product">
+              <p>Цена: <span>158 000 ₽</span></p>
+            </div>
+
+            <a href="#" class="btn btn-accent btn-md btn-order-product">Заказать</a>
+          </div>
+
+          <div class="catalog-info-item">
+            <div class="catalog-info-item__title">Внутренняя отделка</div>
+            <ul class="list-radio-variable my-ul">
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1">
+                  <span class="radio-image"><img src="img/variable1.jpg" alt=""></span>
+                  <span class="radio-text">ДВП</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1">
+                  <span class="radio-image"><img src="img/variable2.jpg" alt=""></span>
+                  <span class="radio-text">ЛДСП</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1">
+                  <span class="radio-image"><img src="img/variable3.jpg" alt=""></span>
+                  <span class="radio-text">ОСБ</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1" checked>
+                  <span class="radio-image"><img src="img/variable4.jpg" alt=""></span>
+                  <span class="radio-text">Вагонка</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1">
+                  <span class="radio-image"><img src="img/variable5.jpg" alt=""></span>
+                  <span class="radio-text">ПВХ</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1">
+                  <span class="radio-image"><img src="img/variable6.jpg" alt=""></span>
+                  <span class="radio-text">МДФ</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-finishing">
+                  <input type="radio" class="inp-radio" name="radio1">
+                  <span class="radio-image"><img src="img/variable7.jpg" alt=""></span>
+                  <span class="radio-text">Фанера</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="catalog-info-item">
+            <div class="catalog-info-item__title">Метраж</div>
+
+            <ul class="list-radio-variable my-ul">
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" name="radio2">
+                  <span class="radio-text">3 м</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" name="radio2">
+                  <span class="radio-text">4 м</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" name="radio2">
+                  <span class="radio-text">5 м</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" checked name="radio2">
+                  <span class="radio-text">6 м</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" name="radio2">
+                  <span class="radio-text">7 м</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" name="radio2">
+                  <span class="radio-text">8 м</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable radio-footage">
+                  <input type="radio" class="inp-radio" name="radio2">
+                  <span class="radio-text">9 м</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="catalog-info-item">
+            <div class="catalog-info-item__title">Комплектация</div>
+            <ul class="list-radio-variable my-ul">
+              <li>
+                <label class="radio-variable">
+                  <input type="radio" class="inp-radio" name="radio3">
+                  <span class="radio-text">Эконом</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-variable">
+                  <input type="radio" class="inp-radio" checked name="radio3">
+                  <span class="radio-text">Стандарт</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="catalog-info-item">
+            <div class="catalog-info-item__title">Характеристики</div>
+            <ul class="my-ul characteristics-object characteristics-product">
+              <li>
+                <p>Силовой каркас</p><span>Холодно-гнутый профиль, окрашенный синей эмалью,
+            размеры 100х50х3 мм</span>
+              </li>
+              <li>
+                <p>Угловые несущие стойки</p><span>Угловые несущие стойки	Угол усиленный, размеры
+            90х90х3 мм</span>
+              </li>
+              <li>
+                <p>Обрешетка внутреннего
+                  второстепенного каркаса</p><span>Брус, размеры 40х70 мм</span>
+              </li>
+              <li>
+                <p>Пол чистовой</p><span>Доска обрезная, размеры 25х100 мм</span>
+              </li>
+              <li>
+                <p>Утепление стен, пола и
+                  потолка</p><span>Утеплитель рулонного типа URSA, KNAUF, ISOVER
+            или аналог, толщина 50 мм</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="product-description">
+          <nav class="navigation-tabs">
+            <div class="nav nav-tabs" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                      type="button" role="tab" aria-controls="nav-home" aria-selected="true">Описание
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                      type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Подробные
+                характеристики
+              </button>
+            </div>
+          </nav>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="box-text">
+                <p>Компания «PROcontainer» производит блок-контейнеры двухкомнатные с душем БК-06 наоснове металлических
+                  конструкций и предлагает купить по выгодным ценам в Москве.
+                  Модули универсальны, в основном используются для (жилого назначения), в т. ч. дачных, офисов, складов,
+                  хозяйственных помещений. Блоки имеют стандартные габариты (от 5 до
+                  9 метров), но клиент может заказать нестандартные варианты с любыми параметрами. Временные сооружения
+                  модульного типа могут быть установлены на ровную площадку
+                  без фундаментного основания.</p>
+
+                <p>Базовое оснащение контейнера включает в себя прочную стальную дверь, окна с поворотно-откидным
+                  механизмом, освещение, розетки и обогреватель. Качественная
+                  теплоизоляция и конвектор обеспечат комфортную температуру в помещении в любое время года, а
+                  высококачественные материалы – продолжительную эксплуатацию. Офисно-
+                  бытовые контейнеры могут быть дополнены тамбуром, внутренним коридором или лестницей. Возможно
+                  индивидуальное оформление фасада или размещение логотипа компании
+                  на контейнерах.</p>
+
+                <p>Контейнеры можно объединить в open space, установить в несколько этажей (до 2-х) или присоединить к
+                  уже существующим капитальным строениям.</p>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <ul class="my-ul characteristics-object">
+                <li>
+                  <p>Габаритные размеры</p><span>19200*6000*5200 мм. (ДхШхВ). Здание состоит из 16 шт. блок-контейнеров, размер каждого 6000*2400*2600 мм.</span>
+                </li>
+                <li>
+                  <p>Силовой каркас</p><span>Нижняя рама – Швеллер г/к 120*50*5; Верхняя рама – Швеллер г/к 120*50*5; Угловые стойки - 90*90*6 мм горячекатаный; Каркас загрунтован и окрашенный краской, цвет RAL 7004 (серый)</span>
+                </li>
+                <li>
+                  <p>Внутренний каркас</p><span>Деревянный, обрешетка из доски Брус, размеры 100х40 мм, потолочные лаги – брус 100х40 мм.</span>
+                </li>
+                <li>
+                  <p>Перегородки</p><span>Перегородки внутри здания утеплены минеральной ватой с толщиной в 50мм.</span>
+                </li>
+                <li>
+                  <p>Кровля</p><span>Односкатная, высота конька 1000 мм. Профлист RAL 7004</span>
+                </li>
+                <li>
+                  <p>Внешняя отделка</p>
+                  <span>Оцинкованный профлист С10 0,45мм с полимерным покрытием, цвет RAL 7004(серый)</span>
+                </li>
+                <li>
+                  <p>Внутренняя отделка (стены)</p><span>ЛДСП 12мм панели, цвет светлый дуб+ металлические омега профили. В сантехнических помещениях отделка стен – ПВХ панели белого цвета.</span>
+                </li>
+                <li>
+                  <p>Внутренняя отделка (потолка)</p><span>ПВХ панели, матовые белые.</span>
+                </li>
+                <li>
+                  <p>Утепление (стены, пол и потолок)</p><span>Стены – плитный базальтовый утеплитель, плотность 32 кг/м3 толщиной 100 мм. Пол, потолок – 150 мм минеральная вата. Пароизоляционная мембрана ИЗОСПАН A, B. (стены, пол, потолок)</span>
+                </li>
+                <li>
+                  <p>Пол черновой</p><span>Доска обрезная 100*25мм, лаги брус 40*100мм</span>
+                </li>
+                <li>
+                  <p>Огнебиозащита</p><span>Обработка всех деревянных частей модульного здания пропиткой «Сенеж»</span>
+                </li>
+                <li>
+                  <p>Дно</p><span>Подшивка дна блок-контейнера оцинкованным листом 0,4мм</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="best-offers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Похожие продукты</h2>
+      </div>
+      <div class="col-12 d-flex d-md-none">
+        <a href="#" class="btn-filter btn btn-accent">Фильтр</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-start">
+        <div class="sidebar">
+          <a href="#" class="btn-close-sidebar">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+          <div class="sidebar-box">
+            <div class="sidebar-box__title">Материал</div>
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Сэндвич панели</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Профлист</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <div class="sidebar-box__title">Модификации</div>
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">С туалетом и душем</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">С тамбуром</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">С перегородкой</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Зимнее</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Утепленные</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Зимнее</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">С окнами</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox" checked>
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Высокие</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">С туалетом и раковиной</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Двухсекционные</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">С окнами</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Зимнее</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Утепленные</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Утепленные</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <div class="sidebar-box__title">Тип</div>
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Мобильные</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Автономные</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Противопожарные</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Сборно-разборные</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <div class="sidebar-box__title">Количество комнат</div>
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Однокомнатный</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Двухкомнатный</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Трехкомнатный</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-box">
+            <div class="sidebar-box__title">Внутренняя отделка</div>
+            <ul class="list-checkbox my-ul">
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">ДВП</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">ЛДСП</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">ОСБ</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Вагонка</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">ПВХ</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">МДФ</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Фанера</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-light-grey btn-clear">Сбросить фильтры</a>
+        </div>
+
+        <div class="tab-content">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-30">
+              <div class="product-card">
+                <a href="catalog.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+                <div class="product-card__body">
+                  <a href="catalog.html" class="product-card__title">Бытовка с окнами из сэндвич панелей
+                    МБ-01</a>
+                  <ul class="list-characteristics my-ul">
+                    <li>
+                      Оттедлка:<span>ЛДСП</span>
+                    </li>
+                    <li>
+                      Размер:<span>5м</span>
+                    </li>
+                    <li>
+                      Комплектация:<span>Эконом</span>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <div class="price">158 000 ₽</div>
+                    <a href="#" class="btn btn-light-grey">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <a href="#" class="btn btn-border btn-md btn-link">Еще продукты</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="completed-projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center title-wrapper">
+        <h2>Выполненные проекты</h2>
+        <a href="#" class="d-inline color-blue ml-10 link-all">Смотреть все</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="completed-projects-slider">
+          <div class="slide">
+            <a href="img/project1.jpg" data-fancybox="project" class="completed-projects-slider__item"><img
+                src="img/project1.jpg" alt="">
+              <span class="hover-item">
+              <span class="hover-item__text">Дом из блок-контейнеров</span>
+            </span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="img/project2.jpg" data-fancybox="project" class="completed-projects-slider__item"><img
+                src="img/project2.jpg" alt="">
+              <span class="hover-item">
+              <span class="hover-item__text">Дом из блок-контейнеров</span>
+            </span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="img/project3.jpg" data-fancybox="project" class="completed-projects-slider__item"><img
+                src="img/project3.jpg" alt="">
+              <span class="hover-item">
+              <span class="hover-item__text">Дом из блок-контейнеров</span>
+            </span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="img/project1.jpg" data-fancybox="project" class="completed-projects-slider__item"><img
+                src="img/project1.jpg" alt="">
+              <span class="hover-item">
+              <span class="hover-item__text">Дом из блок-контейнеров</span>
+            </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-block-containers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7 col-lg-8">
+        <h2>Наши блок-контейнеры:</h2>
+
+        <ul class="list-dots my-ul">
+          <li>универсальные - их можно использовать как дачные домики или садовую бытовку, посты охраны, КПП, жилой дом
+            временного проживания, офис, торговый склад для продукции, прорабскую с комнатой отдыха, хозяйственное
+            помещение или
+            мобильную лабораторию, строительные городки, штаб строительства, блок-контейнер строительный, строительные
+            вагончики,
+            хозблоки, промышленные и сантехнические модули;
+          </li>
+          <li>надежные - прочный металлический каркас с ребрами жесткости с лихвой выдерживает вес двух таких же
+            контейнеров, установленных друг на друга;
+          </li>
+          <li>мобильные - перевезти сборно-разборное сооружение можно на грузовом автомобиле без сопровождения и спец.
+            разрешений;
+          </li>
+          <li>не требуют строительства - достаточно установить конструкцию на подготовленную ровную строительную
+            площадку на участке;
+          </li>
+          <li>безопасные - при конструировании и отделке используются только проверенные материалы высокого качества,
+            которые не наносят вреда человеку: вагонка деревянная, панели пвх и др.;
+          </li>
+          <li>гибкие - при использовании контейнера в составе модульного здания легко демонтировать/монтировать наружные
+            стенки и внутренние перегородки.
+          </li>
+        </ul>
+
+        <div class="box-text">
+          <p>Блок-контейнеры изготавливаются на основе металлокаркаса (швеллер х г и уголок). Стенки из сэндвич-панелей
+            с внутренним
+            утеплением, толщина теплоизоляции варьируется в зависимости от условий эксплуатации вагончика. Наружная
+            отделка -
+            профилированная сталь (окрашенная или оцинкованная). Изнутри стены могут быть обшиты любым материалом на
+            выбор
+            заказчика, чаще выбирают деревянные. Пол чистовой из ДСП, линолеума и других материалов, черновой пол из не
+            обрезной
+            доски. Электрическая проводка, вентиляция в базе. Дополнительно устанавливаются любые инженерные системы:
+            кондиционеры,
+            пожарная сигнализация, отопление, датчики утечки воды, газа, подводятся трубы водоснабжения и т. д. На
+            объекты модульные
+            блок-контейнеры поставляются в полной заводской готовности с учетом выбранной комплектации.</p>
+
+          <p>Блок-контейнер - это удобный современный вариант быстрой организации помещения практически любого
+            назначения. Наша
+            компания предлагает купить или взять в аренду модульные конструкции, достаточно заказать обратный звонок на
+            нашем сайте
+            и наш менеджер свяжется с вами в кратчайшие сроки. В обоих случаях работает доставка, а выгода очевидна по
+            сравнению со
+            строительством капитального здания.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 col-lg-4">
+        <div class="manager-box">
+          <div class="subtitle">Есть вопросы?</div>
+          <div class="box-text">
+            <p>Наш менеджер готов ответить на
+              все интересующие Вас вопросы!</p>
+          </div>
+          <div class="manager-box__photo"><img src="img/manager.jpg" alt=""></div>
+          <div class="manager-box__name">Григорий Лебедев</div>
+          <div class="manager-box__position">Главный менеджер по продажам</div>
+
+          <a href="@" class="btn btn-accent btn-md" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+            обратный звонок</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Продукты</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Модульные здания</a></li>
+            <li><a href="#">Жилые блок-контейнеры</a></li>
+            <li><a href="#">Блок контейнеры под офис</a></li>
+            <li><a href="#">Блок-контейнеры Север</a></li>
+            <li><a href="#">Сантехнические блок-контейнеры</a></li>
+            <li><a href="#">Блок-контейнеры для охраны</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Сферы</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Вахтовые поселки</a></li>
+            <li><a href="#">Строительные здания</a></li>
+            <li><a href="#">Административные здания</a></li>
+            <li><a href="#">Пункты питания</a></li>
+            <li><a href="#">Жилые здания</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">О нас</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Наши объекты</a></li>
+            <li><a href="#">Мы пишем</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Контакты</a>
+
+          <div class="footer-item">
+            <a href="tel:+74992816178" class="tel">8 499 281-61-78</a>
+
+            <div class="schedule">
+              <p>Режим работы приема звонков:</p>
+              <p>с 08:00 до 22:00 (МСК).</p>
+            </div>
+          </div>
+
+          <div class="footer-item address">
+            <p>Адрес:</p>
+            <p>Москва, ул. Генерала Тюленева, 4А,
+              стр. 3., БЦ Тёплый Стан</p>
+          </div>
+
+          <div class="footer-item">
+            <p>Напишите нам:</p>
+            <a href="mailto:manager@pro-container.ru" class="mail">manager@pro-container.ru</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <ul class="list-bank my-ul">
+          <li><a href="#"><img src="img/VIZA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/MS.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/MIR.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/SBER.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/ALFA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/KHALVA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/SPB.svg" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <div class="social-box">
+          <p>Следите за
+            новостями</p>
+
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/odnoklassniki.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/vkontakte.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="copyright">Pro Container © 2022</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Заказать обратный звонок</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Оставьте заявку и мы перезвоним Вам!</div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваш телефон" name="phone">
+          </label>
+          <label>
+            <textarea name="message" placeholder="Комментарии"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent btn-md">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Спасибо!
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Ваша заявка принята, ожидайте звонка</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
