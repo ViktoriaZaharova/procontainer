@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>ProContainer</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <nav class="navbar">
+          <a href="#" class="btn-close-navbar">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                Продукты
+              </a>
+              <ul class="dropdown-menu my-ul">
+                <li><a class="dropdown-item" href="#">Жилые блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Офисные блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Блок-контейнеры Север</a></li>
+                <li><a class="dropdown-item" href="#">Санитарные блок-контейнеры</a></li>
+                <li><a class="dropdown-item" href="#">Блок-контейнеры для КПП</a></li>
+                <li><a class="dropdown-item" href="#">Металлические бытовки</a></li>
+                <li class="drop-item"><a class="dropdown-item" href="#">Модульные здания </a>
+                  <ul class="dropdown-submenu my-ul">
+                    <li><a href="#" class="dropdown-item">Вахтовые поселки</a></li>
+                    <li><a href="#" class="dropdown-item">Административные здания</a></li>
+                    <li><a href="#" class="dropdown-item">Бытовые здания</a></li>
+                    <li><a href="#" class="dropdown-item">Жилые здания</a></li>
+                    <li><a href="#" class="dropdown-item">Здания для бизнеса</a></li>
+                    <li><a href="#" class="dropdown-item">Пункты питания</a></li>
+                    <li><a href="#" class="dropdown-item">Строительнве здания</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+            <li class="nav-item"><a class="nav-link" href="objects.html">Выполненные объекты</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+
+          <div class="search-wrapper dropdown">
+            <a href="#" class="btn-search dropdown-toggle" data-bs-toggle="dropdown"
+               aria-expanded="false">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </a>
+            <div class="dropdown-menu dropdown-search">
+              <form class="form-search">
+                <label>
+                  <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                </label>
+                <button class="btn btn-accent btn-outline-success" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <a href="tel:+74992816178" class="phone">
+          <span class="phone-icon"><img src="img/phone-call.svg" alt=""></span>
+          <span class="phone-text">8 499 281-61-78</span>
+        </a>
+
+        <div class="dropdown country-wrapper">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Москва
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-country vertical-scroll">
+            <a href="#" class="dropdown-item">Москва</a>
+            <a href="#" class="dropdown-item">Санкт-Петербург</a>
+            <a href="#" class="dropdown-item">Балашиха</a>
+            <a href="#" class="dropdown-item">Подольск</a>
+            <a href="#" class="dropdown-item">Химки</a>
+            <a href="#" class="dropdown-item">Мытищи</a>
+            <a href="#" class="dropdown-item">Королев</a>
+            <a href="#" class="dropdown-item">Люберцы</a>
+            <a href="#" class="dropdown-item">Красногорск</a>
+            <a href="#" class="dropdown-item">Электросталь</a>
+            <a href="#" class="dropdown-item">Москва</a>
+            <a href="#" class="dropdown-item">Санкт-Петербург</a>
+            <a href="#" class="dropdown-item">Балашиха</a>
+            <a href="#" class="dropdown-item">Подольск</a>
+            <a href="#" class="dropdown-item">Химки</a>
+            <a href="#" class="dropdown-item">Мытищи</a>
+            <a href="#" class="dropdown-item">Королев</a>
+            <a href="#" class="dropdown-item">Люберцы</a>
+            <a href="#" class="dropdown-item">Красногорск</a>
+            <a href="#" class="dropdown-item">Электросталь</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page page-objects page-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapper-content wrapper-content-page">
+
+          <nav aria-label="breadcrumb" class="nav-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item"><a href="blog.html">Блог</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Почему блок-контейнер является лучшим вариантом для
+                гаража под автомобиль
+              </li>
+            </ol>
+          </nav>
+
+          <h1>Почему блок-контейнер является лучшим вариантом для гаража
+            под автомобиль</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap">
+        <div class="sidebar-blog">
+          <div class="sidebar-blog-item">
+            <div class="sidebar-blog__title">Последние записи</div>
+            <ul class="sidebar-blog-menu">
+              <li><a href="#blog-card1" class="go_to">Почему блок-контейнер
+                является лучшим вариантом
+                для гаража под автомобиль</a></li>
+              <li><a href="#blog-card2" class="go_to">Быстро строящиеся
+                модульные здания</a></li>
+              <li><a href="#blog-card3" class="go_to">Ростверк фундамента –
+                устройство на сваях и
+                столбах монолитного и
+                сборного типа</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-blog-item">
+            <div class="sidebar-blog__title">Категории</div>
+            <ul class="sidebar-blog-menu">
+              <li><a href="#">Блок-контейнеры</a></li>
+              <li><a href="#">Модульные здания</a></li>
+              <li><a href="#">Контейнеры</a></li>
+              <li><a href="#">Строительство</a></li>
+            </ul>
+          </div>
+
+          <div class="subscribe-box">
+            <div class="subscribe-box__title">Подпишитесь на новые
+              статьи от компании
+              «Про контейнер»
+            </div>
+            <p>1 новая статья в неделю!</p>
+
+            <form method="post" class="form-subscribe form">
+              <label>
+                <input type="text" placeholder="Ваш email" name="mail">
+              </label>
+              <button type="submit" class="btn btn-accent"><img src="img/arrow-right.svg" alt=""></button>
+              <label class="checkbox">
+                <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <div class="page-blog-content">
+          <div class="article-box blog-card" id="blog-card1">
+            <div class="blog-card__info">
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/calendar_mini.svg" alt=""></div>
+                <p>23.07.2022</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/user.svg" alt=""></div>
+                <p>Admin</p>
+              </div>
+              <div class="blog-card__info-item">
+                <div class="blog-card__info-icon"><img src="img/eye.svg" alt=""></div>
+                <p>358</p>
+              </div>
+            </div>
+
+            <div class="box-text">
+              <p>Каждый автомобилист хочет, чтобы у его любимого автомобиля был свой дом – гараж. Такое сооружение
+                спасет транспортное средство от влияния
+                погодных условий, увеличит срок службы автомобиля. Да и самому не надо сильно переживать, что
+                автомобиль, стоящий у окон дома угонят,
+                повредят во время парковки другие автолюбители, снимут колеса или зеркала. В гараже с машиной это не
+                произойдет. А угнать ее хулиганам либо
+                преступникам будет значительно сложнее.</p>
+            </div>
+
+            <a href="article.html" class="blog-card__image"><img src="img/blog-image.jpg" alt=""></a>
+
+            <div class="box-text">
+              <p>Но часто бывает, что автомобиль уже купили, а гаража для него еще не приобрели. И тут встает вопрос:
+                какой гараж своему любимого авто
+                приобрести, либо какие материалы применить при возведении помещения под гараж, учитывая имеющиеся
+                средства?</p>
+
+              <p>Если проживаете на земле, в частном коттедже или доме и имеете немаленький участок, то можно гараж
+                возвести из бетона, шлака, блоков, камня,
+                кирпича, деревянного бруса и т.д. Но для такой глобальной стройки нужны немалые средства: не только на
+                материалы и сопутствующие им
+                предметы, но и на оплату труда специалистов, так как самим возвести гараж сложно, если вы никогда
+                строительством не занимались. А с помощью
+                профессионалов можно построить довольно быстро гараж из трубного каркаса, части которого соединяются
+                путем
+                болтового соединения или
+                сваркой. Обшивается он снаружи профнастилом, а внутри утеплителем (можно стекловатой), затем оргалитом.
+                Это дешевый и долговечный вариант.</p>
+
+              <p>Но указанные гаражи из профнастила или других современных материалов, имеют недостаток, причем
+                существенный – их невозможно передвинуть
+                в нужное время на другое место либо совершить их перевозку. А на строительство даже самого простенького
+                помещения для своего транспорта,
+                придется потратить, все равно, немалые время и деньги.
+                Если нет желания строить гараж, то можно разыскать крытую охраняемую стоянку. Но это обойдется вам в
+                копеечку. Вариант этот подойдет для
+                кратковременного пользования.</p>
+            </div>
+
+            <div class="attention-box">
+              <img src="img/attention-icon.png" alt="">
+              <p>А простое и выгодное решение находиться рядом. Проблему с гаражом для автомобиля или другого
+                транспортного средства
+                быстро, и очень просто смогут вам разрешить блочные контейнеры.
+              </p>
+            </div>
+
+            <div class="box-text">
+              <p>К тому же купить блочный контейнер или арендовать под гаражное помещение для средств передвижения можно
+                сегодня за сравнительно небольшие средства.</p>
+
+              <p>Купив или взяв в аренду блок-контейнер, можно получить много плюсов, выражающих в нижеследующем:</p>
+
+              <ul class="list-dots my-ul">
+                <li>Блочный контейнер – это полноценная конструкция, готовая к эксплуатации. Для установки в указанное
+                  место его необходимо лишь перевезти, с чем проблем на сегодняшний день практически нигде нет.
+                </li>
+                <li>Стоимость блочного контейнера значительно ниже, чем возведение любого, самого простенького гаража.
+                </li>
+                <li>Контейнер имеет специальное утепление, благодаря которому создается идеальный микроклимат для
+                  автомобильного транспорта и в жаркую
+                  погоду летом, и в большой мороз в зимний период.
+                </li>
+                <li>В блочный контейнер при желании можно провести электричество, которое позволит зарядить аккумулятор,
+                  произвести обогрев и выполнить
+                  техническое обслуживание и ремонтные работы автомобиля либо иного транспортного средства.
+                </li>
+                <li>В такой гараж можно установить сигнализацию для того, чтобы не бояться преступников и быть
+                  спокойным. Он
+                  будет так же надежен, как и строения из бетона или других тяжелых материалов.
+                </li>
+                <li>Срок службы блока-контейнера исчисляется несколькими десятилетиями, но если выполнить защиту от
+                  коррозии
+                  в нем, то гараж просуществует и дольше.
+                </li>
+                <li>Контейнер устойчив к перевозке, и его можно будет перевезти или передвинуть в любое время и в другое
+                  место, или продать, когда вам станет ненужным, возвратив большую часть первоначальных затрат на его
+                  приобретение.
+                </li>
+                <li>Блоки-контейнеры еще можно использовать в качестве отличных сараев, строений для бытовых помещений,
+                  а
+                  также домиков для дачи, либо летних кухонь.
+                </li>
+                <li>И также в них можно хранить другие средства передвижения: мотоциклы, мопеды, велосипеды, лыжи, сани,
+                  мотоблоки, газонокосилки и другие предметы.
+                </li>
+              </ul>
+
+              <p>Изготовляются такие конструкции по вашей заявке очень быстро, в течение нескольких дней. Размеры и
+                комфортность можно подобрать любые
+                исходя из ваших пожеланий и финансовых возможностей</p>
+
+              <p>Если вы хотите приобрести дом для своего транспортного средства с небольшими затратами, то
+                блок-контейнер на сегодняшний день – идеальный
+                вариант!</p>
+            </div>
+
+            <div class="blog-card__footer">
+              <ul class="list-sorting-objects my-ul">
+                <li><a href="#">Блок-контейнеры</a></li>
+                <li><a href="#">Строительство</a></li>
+              </ul>
+
+              <div class="share">
+                <p>Поделиться</p>
+                <ul class="share-list my-ul">
+                  <li><a href="#"><img src="img/odnoklassniki-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/twitter-grey.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/vk-logo.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="recommended-articles">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Рекомендуем к прочтению</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="recommended-articles-slider">
+          <div class="slide">
+              <a href="article.html" class="recommended-articles-item">
+                <span class="recommended-articles-item__image"><img src="img/article-min1.jpg" alt=""></span>
+                <span class="recommended-articles-item__text">Быстро строящиеся модульные здания</span>
+              </a>
+          </div>
+          <div class="slide">
+              <a href="article.html" class="recommended-articles-item">
+                <span class="recommended-articles-item__image"><img src="img/article-min2.jpg" alt=""></span>
+                <span class="recommended-articles-item__text">Алгоритм проверки репутации строительной компаниия</span>
+              </a>
+          </div>
+          <div class="slide">
+              <a href="article.html" class="recommended-articles-item">
+                <span class="recommended-articles-item__image"><img src="img/article-min3.jpg" alt=""></span>
+                <span class="recommended-articles-item__text">Ростверк фундамента – устройство на сваях и столбах монолитного и сборного типа</span>
+              </a>
+          </div>
+          <div class="slide">
+              <a href="article.html" class="recommended-articles-item">
+                <span class="recommended-articles-item__image"><img src="img/article-min4.jpg" alt=""></span>
+                <span class="recommended-articles-item__text">Полувальмовая крыша голландская и датская</span>
+              </a>
+          </div>
+          <div class="slide">
+              <a href="article.html" class="recommended-articles-item">
+                <span class="recommended-articles-item__image"><img src="img/article-min1.jpg" alt=""></span>
+                <span class="recommended-articles-item__text">Быстро строящиеся модульные здания</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Продукты</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Модульные здания</a></li>
+            <li><a href="#">Жилые блок-контейнеры</a></li>
+            <li><a href="#">Блок контейнеры под офис</a></li>
+            <li><a href="#">Блок-контейнеры Север</a></li>
+            <li><a href="#">Сантехнические блок-контейнеры</a></li>
+            <li><a href="#">Блок-контейнеры для охраны</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Сферы</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Вахтовые поселки</a></li>
+            <li><a href="#">Строительные здания</a></li>
+            <li><a href="#">Административные здания</a></li>
+            <li><a href="#">Пункты питания</a></li>
+            <li><a href="#">Жилые здания</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">О нас</a>
+          <ul class="footer-menu my-ul">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Наши объекты</a></li>
+            <li><a href="#">Мы пишем</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="footer-box">
+          <a href="#" class="footer-box__title">Контакты</a>
+
+          <div class="footer-item">
+            <a href="tel:+74992816178" class="tel">8 499 281-61-78</a>
+
+            <div class="schedule">
+              <p>Режим работы приема звонков:</p>
+              <p>с 08:00 до 22:00 (МСК).</p>
+            </div>
+          </div>
+
+          <div class="footer-item address">
+            <p>Адрес:</p>
+            <p>Москва, ул. Генерала Тюленева, 4А,
+              стр. 3., БЦ Тёплый Стан</p>
+          </div>
+
+          <div class="footer-item">
+            <p>Напишите нам:</p>
+            <a href="mailto:manager@pro-container.ru" class="mail">manager@pro-container.ru</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <ul class="list-bank my-ul">
+          <li><a href="#"><img src="img/VIZA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/MS.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/MIR.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/SBER.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/ALFA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/KHALVA.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/SPB.svg" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <div class="social-box">
+          <p>Следите за
+            новостями</p>
+
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/odnoklassniki.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/vkontakte.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="copyright">Pro Container © 2022</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Заказать обратный звонок</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Оставьте заявку и мы перезвоним Вам!</div>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваш телефон" name="phone">
+          </label>
+          <label>
+            <textarea name="message" placeholder="Комментарии"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent btn-md">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Спасибо!
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-subtitle">Ваша заявка принята, ожидайте звонка</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

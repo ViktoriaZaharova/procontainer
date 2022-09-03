@@ -228,7 +228,6 @@ ul, ol {
 
 h1 {
   width: 100%;
-  margin: 0 0 20px;
   font-size: 40px;
   font-weight: bold; }
 
@@ -630,7 +629,8 @@ a.color-blue:hover {
   padding: 46px 50px;
   margin: 0 0 50px; }
   .wrapper-content-page .subtitle {
-    text-align: left; }
+    text-align: left;
+    margin: 20px 0 0; }
 
 .page {
   margin: 0 0 100px; }
