@@ -656,8 +656,43 @@
     font-size: 16px; }
 
 /*==========  section about-block-containers end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  page contacts  ==========*/
+.page-contacts {
+  margin: 0 0 190px; }
+
+.map {
+  width: 100%;
+  height: 600px;
+  max-width: 670px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .map iframe {
+    width: 100%;
+    height: 100%; }
+
+.form-contacts .checkbox {
+  margin: 0; }
+
+.form-contacts textarea {
+  height: 160px;
+  padding: 17px 20px; }
+
+.form-contacts button {
+  padding: 0 55px;
+  margin: 0 0 0 auto; }
+
+.contacts-item {
+  margin: 0 0 49px; }
+  .contacts-item__title {
+    margin: 0 0 20px;
+    font-size: 22px;
+    font-weight: bold; }
+  .contacts-item .address {
+    max-width: 240px; }
+  .contacts-item .footer-item {
+    margin: 0 0 20px; }
+
+/*==========  page contacts end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
