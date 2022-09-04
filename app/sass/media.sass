@@ -88,6 +88,26 @@
   .object-info
     padding: 0
 
+  .calculate-project-wrapper
+    &__image
+      max-width: 600px
+    &__content
+      width: calc(100% - 600px)
+      padding: 20px 30px
+    .box-text
+      margin: 10px 0
+    h2
+      margin: 0
+
+  .history-company
+    margin: 0 0 60px
+
+  .history-company-item__text
+    padding: 0
+
+  .history-company-slider-dots
+    margin: 20px 0 30px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .btn-burger
@@ -323,6 +343,32 @@
       &__title
         margin: 0 0 15px
 
+  .about-home-wrapper
+    min-height: 600px
+    margin: 0 0 30px
+
+  .about-home .box-text p
+    margin: 0 0 20px
+
+  .about-home ul, .about-home ol
+    margin: 20px 0
+
+  .about-home
+    margin: 0 0 60px
+
+  .calculate-project
+    margin: 60px 0
+
+  .calculate-project-wrapper
+    &__image
+      max-width: none
+      width: 100%
+    &__content
+      width: 100%
+
+  .history-company__image
+    margin: 20px auto 0
+
 @media only screen and (max-width: 768px)
   .btn-md
     height: 45px
@@ -431,6 +477,9 @@
     padding: 20px
     line-height: normal
 
+  .team
+    margin: 0 0 40px
+
 @media only screen and (max-width: 576px)
   .phone
     padding: 0
@@ -525,6 +574,12 @@
     margin: 0 auto 20px
     width: 100%
 
+  .about-home-wrapper
+    min-height: 500px
+    padding: 30px
+    h1
+      margin: 100px auto 20px
+
 @media only screen and (max-width: 480px)
   .title-wrapper
     h2
@@ -565,13 +620,26 @@
     .tab-content
       padding: 20px
 
+  .about-home-wrapper
+    min-height: auto
+    padding: 30px 30px 70px
+    h1
+      margin: 50px auto 20px
+
+  .history-company__image
+    height: auto
+
+  .history-company-slider-dots .slider-dots__item
+    font-size: 14px
+
+  .history-company-slider-dots .slider-dots__item.active
+    font-size: 16px
+
 @media only screen and (max-width: 420px)
   .best-offers
     .navigation-tabs
       width: 100%
       margin: 0 auto 20px
-
-
 
   .category-item__image
     width: 140px

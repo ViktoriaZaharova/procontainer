@@ -112,19 +112,13 @@ $('.history-company-slider').slick({
     slidesToShow: 1,
     arrows: false,
     fade: true,
-    // dots: true
 });
 
 $('.slider-dots__item').click(function() {
     var $this = $(this);
+    $('.history-company-slider').slick('slickGoTo', $this.data('index'));
     $('.slider-dots__item').removeClass('active');
     $this.addClass('active');
-    $('.slider-dots__item.active').prevAll('.slider-dots__item').addClass('dots-active');
-    $('.history-company-slider').slick('slickGoTo', $this.data('index'));
-});
-
-$('.dots-active').click(function () {
-   $('.slider-dots__item').removeClass('dots-active');
 });
 
 

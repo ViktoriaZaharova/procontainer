@@ -61,7 +61,22 @@
   .advantages-box-object {
     padding: 20px 15px; }
   .object-info {
-    padding: 0; } }
+    padding: 0; }
+  .calculate-project-wrapper__image {
+    max-width: 600px; }
+  .calculate-project-wrapper__content {
+    width: calc(100% - 600px);
+    padding: 20px 30px; }
+  .calculate-project-wrapper .box-text {
+    margin: 10px 0; }
+  .calculate-project-wrapper h2 {
+    margin: 0; }
+  .history-company {
+    margin: 0 0 60px; }
+  .history-company-item__text {
+    padding: 0; }
+  .history-company-slider-dots {
+    margin: 20px 0 30px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -275,7 +290,25 @@
     .catalog-info-item {
       margin: 0 0 30px; }
       .catalog-info-item__title {
-        margin: 0 0 15px; } }
+        margin: 0 0 15px; }
+  .about-home-wrapper {
+    min-height: 600px;
+    margin: 0 0 30px; }
+  .about-home .box-text p {
+    margin: 0 0 20px; }
+  .about-home ul, .about-home ol {
+    margin: 20px 0; }
+  .about-home {
+    margin: 0 0 60px; }
+  .calculate-project {
+    margin: 60px 0; }
+  .calculate-project-wrapper__image {
+    max-width: none;
+    width: 100%; }
+  .calculate-project-wrapper__content {
+    width: 100%; }
+  .history-company__image {
+    margin: 20px auto 0; } }
 
 @media only screen and (max-width: 768px) {
   .btn-md {
@@ -375,7 +408,9 @@
   .attention-box {
     margin: 20px 0;
     padding: 20px;
-    line-height: normal; } }
+    line-height: normal; }
+  .team {
+    margin: 0 0 40px; } }
 
 @media only screen and (max-width: 576px) {
   .phone {
@@ -449,7 +484,12 @@
     margin: 0 0 20px; }
   .btn-filter {
     margin: 0 auto 20px;
-    width: 100%; } }
+    width: 100%; }
+  .about-home-wrapper {
+    min-height: 500px;
+    padding: 30px; }
+    .about-home-wrapper h1 {
+      margin: 100px auto 20px; } }
 
 @media only screen and (max-width: 480px) {
   .title-wrapper h2 {
@@ -477,7 +517,18 @@
     .product-description .navigation-tabs .nav-link.active {
       color: #162ee7; }
   .product-description .tab-content {
-    padding: 20px; } }
+    padding: 20px; }
+  .about-home-wrapper {
+    min-height: auto;
+    padding: 30px 30px 70px; }
+    .about-home-wrapper h1 {
+      margin: 50px auto 20px; }
+  .history-company__image {
+    height: auto; }
+  .history-company-slider-dots .slider-dots__item {
+    font-size: 14px; }
+  .history-company-slider-dots .slider-dots__item.active {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 420px) {
   .best-offers .navigation-tabs {
